@@ -1,0 +1,107 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+}
+
+li {
+    color: blueviolet;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.content {
+    overflow: auto;
+    display: flex;
+    /* min-height: 300px; */
+    background: #f7ecca;
+}
+
+.item {
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    background: #d2e8fc;
+    /* margin: 4px; */
+    padding: 12px;
+}
+
+.item:nth-child(2) {
+    margin-left: auto;
+}
+
+.content-1 {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    /* min-height: 300px; */
+    background: #f7ecca;
+}
+
+.item-1 {
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    background: #d2e8fc;
+    /* margin: 4px; */
+    padding: 12px;
+}
+.item-1:nth-child(3) {
+    margin-top: auto;
+}
+
+.content-2 {
+    /* 
+    align-items: center;
+    justify-content: space-around; 
+    thay thế bằng margin: auto;
+    
+    */
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    /* min-height: 300px; */
+    background: #f7ecca;
+}
+
+.item-2 {
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    background: #d2e8fc;
+    /* margin: 4px; */
+    padding: 12px;
+}
+
+.content-3 {
+    /* align-items: center;
+    justify-content: center;
+    cách này ok nhưng ko chuẩn nên dùng margin: auto;
+    */
+    height: 300px;
+    overflow: auto;
+    display: flex;
+    /* min-height: 300px; */
+    background: #f7ecca;
+}
+
+.item-3 {
+    margin: auto;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    background: #d2e8fc;
+    /* margin: 4px; */
+    padding: 12px;
+}

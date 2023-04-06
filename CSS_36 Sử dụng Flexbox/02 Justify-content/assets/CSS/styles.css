@@ -1,0 +1,96 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+}
+
+li {
+    color: blueviolet;
+    font-style: italic;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-weight: 900;
+}
+.menu {
+    color: violet;
+}
+
+.sub-menu {
+    color: deeppink;
+    font-size: 25px;
+}
+.container {
+    font-size: 35px;
+    display: flex;
+    /* Flexbox phải dùng Display: flex; */
+    padding: 10px 0;
+    background: #f9ebc7;
+    justify-content: center;
+    /* justify-content: flex-start; là mặc định */
+}
+
+.container-1 {
+    font-size: 35px;
+    display: flex;
+    /* Flexbox phải dùng Display: flex; */
+    padding: 10px 0;
+    background: #f9ebc7;
+    justify-content: flex-end;
+    /* justify-content: flex-start; là mặc định */
+}
+
+.container-2 {
+    font-size: 35px;
+    display: flex;
+    /* Flexbox phải dùng Display: flex; */
+    padding: 10px 0;
+    background: #f9ebc7;
+    justify-content: space-between;
+    /* justify-content: flex-start; là mặc định */
+}
+.container-3 {
+    font-size: 35px;
+    display: flex;
+    /* Flexbox phải dùng Display: flex; */
+    padding: 10px;
+    background: #f9ebc7;
+    justify-content: space-around;
+    /* justify-content: flex-start; là mặc định */
+}
+.container-4 {
+    font-size: 35px;
+    display: flex;
+    /* Flexbox phải dùng Display: flex; */
+    padding: 10px 0;
+    background: #f9ebc7;
+    justify-content: space-evenly;
+    /* justify-content: flex-start; là mặc định */
+}
+.item {
+    font-size: 24px;
+    background: #cde9fe;
+}
+.item-1 {
+    font-size: 24px;
+    background: #cde9fe;
+}
+.item-2 {
+    font-size: 24px;
+    background: #cde9fe;
+}
+.item-3 {
+    font-size: 24px;
+    background: #cde9fe;
+}
+.item-4 {
+    font-size: 24px;
+    background: #cde9fe;
+}

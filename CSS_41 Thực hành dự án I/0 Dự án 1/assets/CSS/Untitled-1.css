@@ -1,0 +1,455 @@
+* {
+    /* ===phần=== đầu */
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0f1b4c;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    /* ===phần đầu===== */
+    font-size: 62.5%;
+}
+
+body {
+    /* ===== 01 phần đầu  ===== */
+    font-size: 1.6rem;
+    /* =======Thêm fonts====== */
+    font-family: "Poppins", sans-serif;
+}
+
+/* ========= 01 Common =============== */
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 98px;
+    padding: 18px 16px;
+    background: var(--primary-color);
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100 - 48);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===================== Header ======================= */
+.fixed-header {
+    position: relative;
+    background: #e6f0ff;
+    /* height: 100vh; */
+    /* position: sticky;
+    top: -26px;
+    z-index: 1; */
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+.navbar ul a {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #4f5361;
+    padding: 8px 14px;
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+
+.navbar .actions {
+    margin-left: auto;
+}
+
+.navbar .action-link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.navbar .action-btn {
+    padding: 13px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+
+/* ============== 02 Phần Hero Info  ================== */
+
+.hero-wrap {
+    margin-top: 130px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #e6f0ff;
+    height: calc(100vh - 90px);
+}
+
+.hero-wrap .info {
+    width: 51%;
+}
+
+.hero-wrap .sub-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #687690;
+}
+
+.hero-wrap .title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.19;
+    /* or 119% */
+    color: #000336;
+}
+.hero-wrap .desc {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    /* line-height: 32px;
+    font-size: 18px;
+    32 chia 18 = 1.7777 làm tròn 1.78
+    */
+    /* or 178% */
+    /* text-transform: capitalize;
+    viết hoa chữ cái đầu */
+    color: #5a6473;
+}
+
+/* ============= 03 phần Hero Image============== */
+.hero-cta {
+    min-width: 170px;
+    margin-top: 40px;
+}
+.hero-img {
+    position: absolute;
+    /* lên phần fixed-header thêm position: relative; */
+    right: calc((100vw - 1110px) / 2 - 100px);
+    bottom: 0;
+}
+
+/* ================ 04  phần Clients ==================== */
+.Clients {
+    margin-top: 122px;
+}
+
+.Clients .row {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-between; cách xa logo 2 đầu */
+    /* .Clients .star {
+    margin-left: auto;
+    cũng đc như sau này thẻ (More than 45,000+ companies trust besnik) ko có thừa kế như thẻ logo và star
+} */
+}
+
+/* 
+ .Clients .star {
+    margin-left: auto;
+} */
+
+.Clients .desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    /* identical to box height, or 125% */
+    color: #7d8589;
+}
+
+.Clients .row-desc {
+    margin-top: 23px;
+}
+
+.Clients .images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: space-between; chia đều logo ra */
+    margin-top: 96.5px;
+}
+.clients .images a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 42px;
+    border-radius: 12px;
+}
+.clients .images a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+/* ============  05 Làm phần Guides #1 =============== */
+
+.guides {
+    margin-top: 200px;
+}
+
+.guides .sub-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    /* or 100% */
+    text-align: center;
+    color: #000339;
+}
+
+.guides .sub-title::before {
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50px);
+    content: "";
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;
+}
+
+.guides .desc {
+    margin: 20px auto 0;
+    width: 459px;
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    /* or 188% */
+    text-align: center;
+    color: #5a6473;
+}
+
+/* ============  05 Làm phần Guides #2 =============== */
+.list-guide {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project 01</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- ========= thêm Fonts phần đầu -> phần hero sữa font-size: 6.4rem thành 6.2rem cho .hero .title ; ============ -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- =========== fonts phần hero cho giống thiết ké ========== -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet" -->
+        />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <!-- =========<main></main>=========>
+              giống thẻ div khác thẻ div là có ngữ nghĩa  
+              thẻ này nói có chứa bố cục của trang
+              bước đầu mình làm header trước
+        -->
+
+        <!--====================01 Header =======================-->
+        
+            <!-- style="height: 2000px" thêm để cuộn dễ nhìn -->
+            <!--==================== Header =======================-->
+            
+        <header class="fixed-header">
+            <div class="content">
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <!-- Logo -->
+                    <a href="#">
+                        <img src="./assets/img/logo.svg" alt="Besnik." />
+                    </a>
+
+                    <!-- Navigation -->
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                    <!-- Action -->
+                    <div class="actions">
+                        <a href="#!" class="action-link">Sign in</a>
+                        <a href="#!" class="btn action-btn">Sign up</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+                    <!-- ============= 02 Phần Hero Info ============= -->
+                    <!-- Hero -->
+            <main>
+                    <div class="hero-wrap">
+                        <div class="content">
+                            <div class="info">
+                                <p class="sub-title">
+                                    Welcome to Besnik Agency
+                                </p>
+                                <h1 class="title">
+                                    Discover a place you'll love to live.
+                                </h1>
+                                <p class="desc">
+                                    Get the best real estate deals first, before
+                                    they hit the mass market! hot foreclosure
+                                    deals with one simple search.
+                                </p>
+                                <!-- ==== CTA: call to action (là nút hành động) === -->
+                                <a href="#!" class="btn hero-cta"
+                                    >More About Us</a>
+                            </div>
+                        </div>
+                        <!-- =============== 03 phần Hero Image =============== -->
+                        <img
+                            src="./assets/img/house illustration.svg"
+                            alt="Discover a place you'll love to live."
+                            class="hero-img"
+                        />
+                    </div>
+                </div>
+            <!-- ====================== 04  phần Clients======================== -->
+            <div class="Clients">
+                <div class="content">
+                    <div class="row">
+                        <!-- Logo  -->
+                        <img src="./assets/img/logo.svg" alt="Besnik." />
+
+                        <!-- Stars -->
+                        <div class="star">
+                            <img src="./assets/img/stars.svg" alt="star" />
+                            <img src="./assets/img/stars.svg" alt="star" />
+                            <img src="./assets/img/stars.svg" alt="star" />
+                            <img src="./assets/img/stars.svg" alt="star" />
+                            <img src="./assets/img/stars.svg" alt="star" />
+                        </div>
+                    </div>
+                    <div class="row row-desc">
+                        <p class="desc">
+                            More than 45,000+ companies trust besnik
+                        </p>
+                        <p class="desc">5 Star Ratings (2k+ Review)</p>
+                    </div>
+                    <div class="images">
+                        <img src="./assets/img/Meundies.svg" alt="Meundies" />
+                        <img src="./assets/img/slack.svg" alt="slack" />
+                        <img src="./assets/img/amazon.svg" alt="amazon" />
+                        <img
+                            src="./assets/img/woo commerce.svg"
+                            alt="woo commerce"
+                        />
+                        <img src="./assets/img/Sitepoint.svg" alt="Sitepoint" />
+                    </div>
+                </div>
+            </div>
+            <!-- =================== 05 Làm phần Guides  ================== -->
+            <div id="services" class="guides">
+                <!-- ============ 06 Làm phần Guides #2 ===============  -->
+                <!-- Guides -->
+                <div  class="content">
+                    <h2 class="sub-title">How its works?</h2>
+                    <p class="desc">
+                        Everything you need to know when you're looking to buy,
+                        rent, or sell - all in one place.
+                    </p>
+                    
+                    <!-- ============ 06 Làm phần Guides #2 ===============  -->
+                    <!-- List guide -->
+                    <ul class="list-guide">
+                        <li class="guide-item">
+                            <img
+                                src="./assets/img/buyer.svg"
+                                alt="buyer"
+                                class="icon"
+                            />
+                            <h3 class="title">Buyer Guides</h3>
+                            <a href="#!" class="link">
+                                <span>How to buy</span>
+                                <img
+                                    src="./assets/img/arrow-right.svg"
+                                    alt="Arrow Right"
+                                    class="arrow"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-guide">
+                        <li class="guide-item">
+                            <img
+                                src="./assets/img/renter.svg"
+                                alt="renter"
+                                class="icon"
+                            />
+                            <h3 class="title">Renter Guidess</h3>
+                            <a href="#!" class="link">
+                                <span>How to rent</span>
+                                <img
+                                    src="./assets/img/arrow-right.svg"
+                                    alt="Arrow Right"
+                                    class="arrow"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-guide">
+                        <li class="guide-item">
+                            <img
+                                src="./assets/img/seller.svg"
+                                alt="seller"
+                                class="icon"
+                            />
+                            <h3 class="title">Seller Guides</h3>
+                            <a href="#!" class="link">
+                                <span>How to sell</span>
+                                <img
+                                    src="./assets/img/arrow-right.svg"
+                                    alt="Arrow Right"
+                                    class="arrow"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="guide-cta">
+                        <a href="#!" class="btn">Sell Full Guidelines</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

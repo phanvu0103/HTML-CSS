@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute selector #4</title>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <h1>Attribute selector #4</h1>
+        <ul>
+            <li>
+                [attribute^=value] a[href^="https"] ^
+                <input type="checkbox" />
+            </li>
+            <li>
+                [attribute$=value] a[href$=".pdf"]
+                <input type="checkbox" />
+            </li>
+            <li>
+                [attribute*=value] a[href*="w3schools"]
+                <input type="checkbox" />
+            </li>
+        </ul>
+        <hr />
+        <a href="https://google.com.vn/download/abc.jpg">link1</a>
+        <a href="http://facebook.com/download/abc.jpg">link2</a>
+        <a href="https://netfix.com/download/abc.pmg">link3</a>
+        <a href="https://fullsrack.edu.vn/abc.pmg">link4</a>
+        <hr />
+        <a href="https://google.com.vn/download/abc.jpg">link1</a>
+        <a href="http://facebook.com/download/abc.jpg">link2</a>
+        <a href="https://netfix.com/download/abc.pmg">link3</a>
+        <a href="https://fullsrack.edu.vn/abc.pmg">link4</a>
+        <hr />
+        <a href="https://google.com.vn/download/abc.jpg">link1</a>
+        <a href="http://facebook.com/downloads/abc.jpg">link2</a>
+        <a href="https://netfix.com/download/abc.pmg">link3</a>
+        <a href="https://fullsrack.edu.vn/abc.pmg">link4</a>
+        <hr />
+    </body>
+</html>
