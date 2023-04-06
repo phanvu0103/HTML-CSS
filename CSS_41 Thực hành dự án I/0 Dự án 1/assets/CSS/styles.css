@@ -145,6 +145,7 @@ a {
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
+    Q
     /* or 119% */
     color: #000336;
 }
@@ -733,6 +734,7 @@ lấp đầy diện tích kích thước mình tạo ra
     width: 28px;
     height: 28px;
     border-radius: 3px;
+    background: #F9F9F9;
 }
 
 .footer .social-link:hover {
