@@ -1,0 +1,46 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.box-1 {
+    width: 100px;
+    height: 100px;
+    /* background-color: rgb(red, green, blue);
+
+     */
+    background-color: rgb(255, 255, 0);
+    /* màn hình lên đến 16,7 triệu màu 
+    256 mũ 3 = 16,777,216
+    */
+}
+.box-2 {
+    width: 100px;
+    height: 100px;
+    /* background-color:rgba(red, green, blue, alpha); */
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.box-3 {
+    width: 100px;
+    height: 100px;
+    /* background-color: #f00;
+    #rrggbb
+    #(red) (green) (blue)
+    nhị phân: 01
+    thập phân :0123456789
+    hex là thập lục phân: 013456789abcdef
+    */
+    background-color: #ff00ee80;
+}
+.box-4 {
+    margin: 20px;
+    color: red;
+    width: 100px;
+    height: 100px;
+    background-color: currentColor;
+    outline: 2px solid currentColor;
+    outline-offset: 10px;
+}
+p {
+    color: #000;
+}

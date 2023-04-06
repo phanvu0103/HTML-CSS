@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+}
+.box {
+  box-sizing: border-box;
+  background-color: orange;
+  height: 100px;
+}
+h3 {
+}

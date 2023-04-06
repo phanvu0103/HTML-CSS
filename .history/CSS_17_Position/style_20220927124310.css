@@ -1,0 +1,27 @@
+html body {
+  margin: 0;
+}
+h1 {
+  color: violet;
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+  color: blue;
+}
+li:nth-of-type(1) {
+  color: rgb(10, 143, 143);
+  font-size: 20px;
+}
+li:nth-of-type(2) {
+  color: rgb(10, 143, 143);
+  font-size: 20px;
+}
+li:nth-of-type(3) {
+  color: rgb(10, 143, 143);
+  font-size: 20px;
+}
+li:nth-of-type(4) {
+  color: rgb(10, 143, 143);
+  font-size: 20px;
+}

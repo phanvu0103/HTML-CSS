@@ -1,0 +1,17 @@
+div {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px;
+    margin: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+/* 
+* Nhóm 5 thuộc tính trong Box Model
+- width
+- height
+- border
+- padding
+- margin
+ */

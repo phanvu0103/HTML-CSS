@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin-right: 50px;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+body {
+    background-color: aquamarine;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /*background-color: blue;  transparent( trong suốt) nếu ko có bgc*/
+    border: 20px solid transparent;
+    padding: 20px;
+    /* margin: ko có màu ; */
+    margin: 50px;
+}

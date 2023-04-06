@@ -1,0 +1,16 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 23px;
+}
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.desc {
+  font-size: 19px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+.btn {
+}

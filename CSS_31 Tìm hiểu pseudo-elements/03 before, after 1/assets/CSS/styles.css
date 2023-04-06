@@ -1,0 +1,52 @@
+* {
+    /* margin: 10px; */
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin: 0 20px;
+}
+
+li {
+    color: blueviolet;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.menu {
+    color: aqua;
+}
+
+.box {
+    margin: 0 20px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.box::before {
+    content: "Nội dung phía trước";
+    color: rgb(116, 6, 241);
+    /* content: "" 
+    thêm chữ phía trước có "" để thêm*/
+}
+
+.box::after {
+    content: "Nội dung phía sau";
+    /* content: "" 
+    thêm chữ phía sau có "" để thêm  */
+    display: inline-block;
+    /* phải dổi     display: inline-block;
+ thì ::before hay ::after mới hoạt đông  */
+    color: red;
+    height: 200px;
+    width: 200px;
+    background: yellow;
+    border-radius: 50%;
+}

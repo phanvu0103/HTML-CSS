@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vũ Hên Khải</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      html body {
+        margin: 0;
+      }
+      .box {
+        width: 100%;
+        height: 120px;
+        background: rgb(211, 231, 243);
+      }
+      .box::after {
+        content: attr(data-title);
+      }
+
+      a::after {
+        content: "(" attr(href) ")";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" data-title="Đây là Chữ màu xanh"></div>
+
+    <a href="https://fullstack.edu.vn">Lớp học Lập Trình </a>
+
+    <h1>CSS Function: Phân truyền là hàm</h1>
+    <ul>
+      <li>var ()</li>
+      <li>linear-gradient ()</li>
+      <li>rgba ()</li>
+      <li>rgb () "ko có thông số ampha ko thể tạo màu trong suốt đc "</li>
+      <li>
+        calc () hàm này có thể tính toán đc trên width: calc(120px) hay là (80%
+        + 20%) hay là (120px + 50px) , height: calc(120px), trong thực tế hàm
+        này có thể cộng giá trị tương đối và giá trị tuyệt đối
+      </li>
+      <li>
+        attr () thuộc tính của html kết hợp lớp giả .box::after{ content:
+        attr(data-title); } a::after{ content:"("attr(href) ")" }
+
+        <div class="box" data-title="Đây là Chữ màu xanh"></div>
+
+        <a href="https://fullstack.edu.vn">Lớp học Lập Trình </a>
+      </li>
+    </ul>
+  </body>
+</html>

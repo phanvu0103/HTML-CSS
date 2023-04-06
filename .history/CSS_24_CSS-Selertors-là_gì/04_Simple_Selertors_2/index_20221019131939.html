@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Simple Selertors</title>
+  </head>
+  <body>
+    <h1>CSS Simple Selertors</h1>
+    <ul>
+      <li>
+        * Selector
+        <input type="checkbox" />
+      </li>
+      <li>
+        Element.class selector
+        <input type="checkbox" />
+      </li>
+      <li>
+        Element.,Element selector
+        <input type="checkbox" />
+      </li>
+      <li>
+        class.class2 selector
+        <input type="checkbox" />
+      </li>
+    </ul>
+    <tr>
+      <th style="width: 20%">Selector</th>
+      <th style="width: 20%">Example</th>
+      <th>Example description</th>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_class.asp">.<i>class</i></a>
+      </td>
+      <td class="notranslate">.intro</td>
+      <td>Selects all elements with class="intro"</td>
+    </tr>
+    <tr>
+      <td><em>.class1.class2</em></td>
+      <td class="notranslate">.name1.name2</td>
+      <td>
+        Selects all elements with both <em>name1</em> and <em>name2</em> set
+        within its class attribute
+      </td>
+    </tr>
+    <tr>
+      <td><em>.class1 .class2</em></td>
+      <td class="notranslate">.name1 .name2</td>
+      <td>
+        Selects all elements with <em>name2</em> that is a descendant of an
+        element with <em>name1</em>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_id.asp">#<i>id</i></a>
+      </td>
+      <td class="notranslate">#firstname</td>
+      <td>Selects the element with id="firstname"</td>
+    </tr>
+    <tr>
+      <td><a href="sel_all.asp">*</a></td>
+      <td class="notranslate">*</td>
+      <td>Selects all elements</td>
+    </tr>
+    <tr>
+      <td>
+        <i><a href="sel_element.asp">element</a></i>
+      </td>
+      <td class="notranslate">p</td>
+      <td>Selects all &lt;p&gt; elements</td>
+    </tr>
+    <tr>
+      <td>
+        <i><a href="sel_element_class.asp">element.class</a></i>
+      </td>
+      <td class="notranslate">p.intro</td>
+      <td>Selects all &lt;p&gt; elements with class="intro"</td>
+    </tr>
+    <tr>
+      <td>
+        <i><a href="sel_element_comma.asp">element,element</a></i>
+      </td>
+      <td class="notranslate">div, p</td>
+      <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_element_element.asp"><i>element</i> <i>element</i></a>
+      </td>
+      <td class="notranslate">div p</td>
+      <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_element_gt.asp"><i>element</i>&gt;<i>element</i></a>
+      </td>
+      <td class="notranslate">div &gt; p</td>
+      <td>
+        Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_element_pluss.asp"><i>element</i>+<i>element</i></a>
+      </td>
+      <td class="notranslate">div + p</td>
+      <td>
+        Selects the first &lt;p&gt; element that is placed immediately after
+        &lt;div&gt; elements
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_gen_sibling.asp"><i>element1</i>~<i>element2</i></a>
+      </td>
+      <td>p ~ ul</td>
+      <td>
+        Selects every &lt;ul&gt; element that is preceded by a &lt;p&gt; element
+      </td>
+    </tr>
+    <tr>
+      <td><a href="sel_attribute.asp">[<i>attribute</i>]</a></td>
+      <td class="notranslate">[target]</td>
+      <td>Selects all elements with a target attribute</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_attribute_value.asp">[<i>attribute</i>=<i>value</i>]</a>
+      </td>
+      <td class="notranslate">[target=_blank]</td>
+      <td>Selects all elements with target="_blank"</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_attribute_value_contains.asp"
+          >[<i>attribute</i>~=<i>value</i>]</a
+        >
+      </td>
+      <td class="notranslate">[title~=flower]</td>
+      <td>
+        Selects all elements with a title attribute containing the word "flower"
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="sel_attribute_value_lang.asp"
+          >[<i>attribute</i>|=<i>value</i>]</a
+        >
+      </td>
+      <td class="notranslate">[lang|=en]</td>
+      <td>
+        Selects all elements with a lang attribute value equal to "en" or
+        starting with "en-"
+      </td>
+    </tr>
+  </body>
+</html>

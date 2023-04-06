@@ -1,0 +1,7 @@
+strong {
+    padding: 50px;
+    background-color: green;
+    display: inline-block;
+    /* đạt theo ý tưởng mình mong muốn
+  có thể thẻ khối */
+}

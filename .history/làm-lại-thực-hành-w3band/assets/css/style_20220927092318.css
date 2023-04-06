@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main {
+}
+#header {
+  background-color: #000;
+  height: 46px;
+}
+#nav {
+  text-decoration: none;
+  color: #fff;
+}
+#nav li {
+}
+#nav li a {
+}
+#nav .subnav {
+}
+#nav li:hover a {
+}
+
+#slider {
+}
+#content {
+}
+#pooter {
+}

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+}
+html body {
+  margin: 0;
+}
+h1 {
+  color: violet;
+  font-size: 50px;
+}
+h2 {
+  margin-bottom: 5px;
+}
+
+li:nth-of-type(1) {
+  color: rgb(113, 243, 124);
+  font-size: 30px;
+}
+
+li:nth-of-type(2) {
+  color: rgb(207, 57, 119);
+  font-size: 20px;
+}
+
+ul {
+  color: rgb(223, 57, 121);
+  font-size: 20px;
+}
+
+.box {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(28, 219, 155);
+  position: relative;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.box-child {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
+
+.box2 {
+  width: 500px;
+  height: 100px;
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}

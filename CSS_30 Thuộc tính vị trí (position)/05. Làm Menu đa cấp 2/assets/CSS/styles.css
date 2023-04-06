@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background: #333;
+}
+
+.menu > li {
+    /* position: relative;  */
+    /*   bỏ position: relative; này thêm vào .menu li để thanh menu con 2 theo thanh menu con 1 
+ */
+    display: inline-block;
+    margin: 0 12px;
+    padding-bottom: 20px;
+    /* padding-bottom: 20px; tăng phần dưới menu cha gần thanh menu con */
+}
+.menu li {
+    position: relative;
+}
+
+/* .menu > li:hover .submenu {
+    display: block;
+    menu > li:hover .submenu
+    hover thanh menu cấp 1 con hiện lên
+    nếu có thanh menu cấp 2 thì chuyển dấu > sau chữ :hover
+} */
+
+.menu li:hover > .submenu {
+    display: block;
+    /* .menu > li:hover .submenu
+    hover thanh menu con hiện lên */
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    /*    text-decoration: none;
+    mất dáugach chân */
+}
+
+.submenu {
+    position: absolute;
+    /* position: absolute; cho thanh menu con nằm dưới thanh menu cha */
+    top: 32px;
+    left: -12px;
+    width: 140px;
+    background-color: white;
+    display: none;
+    /* display: none;
+    mất thanh menu con */
+}
+.submenu .submenu {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 140px;
+    background-color: white;
+    display: none;
+}
+
+.submenu li:hover {
+    /* .submenu li:hover 
+    hover cho thanh menu con có nền màu hồng khi chỉ xuống hanh menu con  */
+    background-color: rgb(245, 10, 147);
+}
+
+.submenu a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    /*  border-bottom: 1px solid #ccc;
+    có dấu gạch dưới cho thanh menu con 
+    nếu dùng  display: block; thì *{có box-sizing: border-box; thì dấu gạch chân sẽ gạch hết thanh menu con }*/
+}

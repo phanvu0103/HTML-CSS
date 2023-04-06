@@ -1,0 +1,12 @@
+a {
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+    height: 34px;
+    /* border-radius: 17px; ko dc bo tròn  */
+    border-radius: 999px;
+    min-width: 80px;
+    display: inline-block;
+}

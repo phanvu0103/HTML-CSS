@@ -1,0 +1,14 @@
+:root {
+    --text-color: violet;
+}
+h1 {
+    color: var(--text-color);
+}
+h2 {
+    --my-color: blue;
+    color: var(--my-color);
+}
+h3 {
+    color: var(--text-color);
+}
+/* <!--: root là lớp giả -->; */

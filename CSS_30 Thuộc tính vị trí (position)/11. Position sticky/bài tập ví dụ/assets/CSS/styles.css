@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: blue;
+    font-size: 32px;
+    background: orange;
+    position: sticky;
+    top: 0;
+}
+
+.chapter {
+    height: 700px;
+    background: #ccc;
+    overflow: auto;
+    margin-top: 50px;
+}

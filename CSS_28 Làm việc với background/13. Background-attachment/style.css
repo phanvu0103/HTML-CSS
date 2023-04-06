@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    margin: 30px;
+    font-style: unset;
+    font-size: 35px;
+    font: 3em sans-serif;
+    font-weight: 400;
+}
+.sp {
+    height: 240px;
+    /* background-image: url(https://images.unsplash.com/photo-1674736520513-f5e90bd3d534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=875&q=80); */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.box {
+    height: 240px;
+    background-color: #ccc;
+    color: blue;
+    font-weight: 400;
+    overflow: auto;
+    /* overflow: auto; tư động xuất hiện thanh cuộn */
+    background-image: url(https://images.unsplash.com/photo-1674569894883-5afe52e070b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-attachment: local;
+}
+
+.bg {
+    height: 240px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

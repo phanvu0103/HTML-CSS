@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+li {
+    color: blueviolet;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.box {
+    height: 50px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.box-1 {
+    background: green;
+}
+
+.container {
+    height: 200px;
+    background: violet;
+    position: relative;
+}
+
+.content {
+    height: 150px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.box-2 {
+    background: orange;
+    position: absolute;
+    bottom: 0;
+    /* left: 100px; */
+}
+
+.box-3 {
+    background: rgb(176, 11, 209);
+}

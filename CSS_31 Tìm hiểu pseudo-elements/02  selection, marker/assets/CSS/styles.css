@@ -1,0 +1,43 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+    margin-bottom: 20px;
+    margin: 0 20px;
+}
+
+h2 {
+    margin: 0 20px;
+}
+
+li {
+    color: blueviolet;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+p {
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+p::selection {
+    color: aqua;
+    background: orange;
+}
+
+::marker {
+    color: red;
+    /* cho số màu đỏ */
+}
+
+.w3-codespan {
+    color: crimson;
+}

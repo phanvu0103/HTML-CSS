@@ -1,0 +1,63 @@
+/* 1 em = 16px */
+body {
+    line-height: 1.6;
+}
+.box {
+    /* font-size: 20x */
+    width: 10em;
+    height: 10em;
+    background-color: orange;
+    /* 1em + 160px */
+}
+.parent {
+    font-size: 20px;
+}
+.box-1 {
+    font-size: 10px;
+    width: 10em;
+    height: 10em;
+    background-color: blueviolet;
+}
+.parent-2 {
+    font-size: 20px;
+}
+.box-2 {
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    background-color: aqua;
+}
+/*
+// 20px
+ box-2 (1) { ( phép tính tương đối  nên ta phải tính  )
+    /
+    font-size: 2em; // 2em tinh ra -> 40px 
+    width: 2em; // 2em --> 80p
+    height: 2em; // 2em --> 80p
+    background-color: aqua;
+     
+            box-2 (2) { 
+            font-size: 2em;  // 2em tinh ra -> 80px
+            width: 2em; // 2em --> 160p
+            height: 2em; // 2em --> 160p
+            background-color: aqua;
+                        box-2 (3) {
+                        font-size: 2em;  // 2em tinh ra -> 160px
+                        width: 2em;  // 2em --> 320p
+                        height: 2em; // 2em --> 320p
+                        background-color: aqua;
+}         
+}                  
+}
+} 
+*/
+.parent-3 {
+    font-size: 20px;
+}
+.box-3 {
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    border: 0.25em solid greenyellow;
+    background-color: red;
+}

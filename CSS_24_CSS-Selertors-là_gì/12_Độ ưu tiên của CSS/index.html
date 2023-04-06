@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Độ ưu tiên của CSS</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Độ ưu tiên của CSS</h1>
+        <p>tìm từ khóa <b>CSS Specificity</b></p>
+        <h2>
+            <a id="demo" class="link" href="#!" style="color: blue"
+                >Độ ưu tiên của CSS</a
+            >
+        </h2>
+
+        <p>
+            Lưu ý: Kiểu nội tuyến nhận giá trị đặc trưng là 1000 và luôn được ưu
+            tiên cao nhất!
+        </p>
+
+        <p>
+            Lưu ý 2: Có một ngoại lệ đối với quy tắc này: nếu bạn sử dụng
+            !important quy tắc, nó thậm chí sẽ ghi đè các kiểu nội tuyến!
+        </p>
+        <p>!important hạn chế sử dụng</p>
+
+        <table class="ws-table-all notranslate">
+            <tbody>
+                <tr>
+                    <th>Selector</th>
+                    <th>Specificity Value</th>
+                    <th>Calculation</th>
+                </tr>
+                <tr>
+                    <td>p</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>p.test</td>
+                    <td>11</td>
+                    <td>1 + 10</td>
+                </tr>
+                <tr>
+                    <td>p#demo</td>
+                    <td>101</td>
+                    <td>1 + 100</td>
+                </tr>
+                <tr>
+                    <td>&lt;p style="color: pink;"&gt;</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>#demo</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>.test</td>
+                    <td>10</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>p.test1.test2</td>
+                    <td>21</td>
+                    <td>1 + 10 + 10</td>
+                </tr>
+                <tr>
+                    <td>#navbar p#demo</td>
+                    <td>201</td>
+                    <td>100 + 1 + 100</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>0</td>
+                    <td>0 (the universal selector is ignored)</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

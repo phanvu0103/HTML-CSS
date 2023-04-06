@@ -1,0 +1,63 @@
+/* Resst CSS */
+/* bước đầu trong CSS gõ dấu * vào thêm các thuộc tính như sau */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* loại bỏ tính toán kích thước ta dùng (box-sizing: border-box;)  */
+}
+/* 
+1. Làm từ ngoài vào trong
+2. Làm Từ trên xuống dưới
+3. Làm từ tổng quan đến chi tiết
+        header
+        slider
+
+ */
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông, ....)
+
+
+*/
+#main {
+  /* nằm trong body chứa cả website */
+}
+
+#header {
+  /* kích thước chiều rộng bằng main 
+ độ dài mình đi đo hay (cty, khách hàng yêu cầu) trên w3schools The BAND
+ 
+*/
+  height: 47px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 22.5px;
+  box-shadow: #000000, 0px 2px 5px 0px;
+}
+
+#slider {
+}
+
+#content {
+}
+
+#footer {
+}
+.home {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: blue;
+}
+.band {
+  color: #ffffff;
+}
+.tour {
+}
+.cont {
+}
+.more {
+}

@@ -1,0 +1,29 @@
+.box {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box1 {
+    background-color: red;
+    margin: 10px;
+  }
+  .box2 {
+    background-color: blue;
+    margin: 10px 15px 18px 12px;
+  }
+  .box3 {
+    background-color: violet;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  .box4 {
+    background-color: rgb(22, 77, 228);
+    margin-top: 20px;
+  }
+  /*
+        border thì giá trị 2px
+        */
+</style>

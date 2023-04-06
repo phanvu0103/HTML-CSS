@@ -1,0 +1,14 @@
+body {
+  padding-left: 32px;
+  font-family: montserrat;
+  font-size: 21px;
+}
+p:first-of-type {
+  color: red;
+  /* first-on-type */
+}
+.item > .text:nth-of-type(5) {
+  color: rgb(204, 0, 255);
+  font-size: 21px;
+  /* nth-on-type(n) */
+}

@@ -1,0 +1,6 @@
+.menu > li > a {
+  color: red;
+}
+.btn + .btn {
+  margin: 8ex;
+}

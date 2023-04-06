@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Montserrat;
+}
+.menu > li > a {
+  color: red;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 3px;
+
+  color: #fff;
+  background-color: #5ebbff;
+
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.btn + .btn {
+  margin: 8px;
+}

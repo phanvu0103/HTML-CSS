@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Làm Notification Badge</title>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <h1>Làm Notification Badge</h1>
+        <ul>
+            <li>
+                Static (default)
+                <input type="checkbox" />
+            </li>
+            <li>
+                Relative
+                <input type="checkbox" />
+            </li>
+            <li>
+                Absolute
+                <input type="checkbox" />
+            </li>
+            <li>
+                Fixed
+                <input type="checkbox" />
+            </li>
+            <li>
+                Sticky
+                <input type="checkbox" />
+            </li>
+        </ul>
+        <br />
+        <!-- 
+            1. Flow lauout (bố cục luồng | luồng bình thường)
+            2. Positioned (được định vị)
+                - Top
+                - Right
+                - Bottom
+                - left
+            - Static: 1    
+            - relative -> 1, 2 -> định vị theo vị trí ban đầu của nó khi dùng thuộc tính top left... thay đổi vị trí.
+            -absolute -> 2
+                1. Không có thẻcha được định vị:
+                => định vị theo vị trí của thẻ body
+                2. Có thẻcha được định vị:
+                => định vị theo vị trí của thẻ cha gần nhất (được định vị)
+         -->
+        <!-- Notification Badge -->
+        <div class="notification">
+            <i class="fa-solid fa-bell"></i>
+            <span class="badeg">12</span>
+        </div>
+    </body>
+</html>

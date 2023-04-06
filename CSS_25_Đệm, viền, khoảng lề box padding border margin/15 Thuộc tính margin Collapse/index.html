@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./reset.css" />
+        <!-- GG fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Styles -->
+        <link rel="stylesheet" href="./style.css" />
+        <title>Border</title>
+    </head>
+    <body>
+        <h1>Margin Collapse</h1>
+        <ul>
+            <li>
+                <b>. Định Nghĩa</b>
+            </li>
+            <li>
+                <b>.Trường hợp xảy ra</b>
+                <ul>
+                    <li>
+                        Các Thẻ con liên kết
+                        <input type="checkbox" />
+                    </li>
+                    <li>
+                        Thẻ cha và thẻ con
+                        <input type="checkbox" />
+                    </li>
+                </ul>
+                <b>. Cách khắc phục </b>
+                <ul>
+                    <li>
+                        float: left/ right
+                        <input type="checkbox" />
+                    </li>
+                    <li>
+                        Position: absolute
+                        <input type="checkbox" />
+                    </li>
+                    <li>
+                        Display: inline-block/ flex
+                        <input type="checkbox" />
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!--  
+            1. Các thẻ con liền kề -margin ngược chiều (đối đầu)
+            2.Thẻ cha và thẻ con - margin cùng chiều 
+        -->
+        <h2>Heading</h2>
+        <p>paragraph</p>
+        <div class="container">
+            <h2 class="heading">Heading</h2>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+body {
+  padding-left: 32px;
+  font-size: 120%;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  color: red;
+}
+
+#heading {
+  color: blue;
+  font-size: 35px;
+}
+.color-red > .large {
+  color: red;
+  fz40px
+}
+.large {
+  font-size: 52px;
+}
+.color-red {
+  color: blueviolet;
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: red;
+    font-weight: 500;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.box1 {
+    color: rgb(240, 205, 11);
+    font-weight: 400;
+    font-size: 25px;
+    height: 240px;
+    border: 30px dotted green;
+    background-color: blue;
+}
+.box2 {
+    height: 500px;
+    font-size: 25px;
+    font-size: 25px;
+    color: rgb(61, 109, 241);
+    border: 30px dotted rgb(100, 46, 224);
+    background-color: rgb(16, 218, 191);
+    background-clip: padding-box;
+    background-image: url(https://images.unsplash.com/photo-1674569894883-5afe52e070b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+
+.box3 {
+    color: rgb(240, 205, 11);
+    font-weight: 400;
+    font-size: 25px;
+    height: 500px;
+    /* width: 200px; */
+    border: 10px solid green;
+    padding: 10px;
+    background-color: blue;
+    background-image: url(https://images.unsplash.com/photo-1674569894883-5afe52e070b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+}

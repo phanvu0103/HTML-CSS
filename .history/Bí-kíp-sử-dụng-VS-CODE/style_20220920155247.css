@@ -1,0 +1,21 @@
+.box {
+    margin: 0%;
+    display: block;
+    align-self: center;
+    background-color: brown;
+    
+}
+.tieude {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: yellowgreen;
+    background-position-x: 50%;
+    width: 380px;
+    height: 30px;
+}
+.item {
+    color: blue;
+    font-size: 25px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>selection, marker</title>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <h1>Pseudo-Elements ((phần tử giả)) :selection, marker</h1>
+        <ol>
+            <li>
+                ::first-line (chọn dòng đầu tên) ko tác động thẻ inline
+                <input type="checkbox" />
+            </li>
+            <li>
+                ::first-letter (chọn chữ đầu tiên)
+                <input type="checkbox" />
+            </li>
+            <li>
+                ::selection
+                <input type="checkbox" />
+            </li>
+            <li>
+                ::marker (tác động trên thẻ ul ol li)
+                <input type="checkbox" />
+            </li>
+            <li>
+                ::before
+                <input type="checkbox" />
+            </li>
+            <li>
+                ::after
+                <input type="checkbox" />
+            </li>
+        </ol>
+        <br />
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsa
+            eius omnis pariatur fugit, vel atque debitis consequatur quasi sit
+            non facilis ab qui provident! Ducimus culpa consequatur error magni.
+        </p>
+        <h2>
+            CSS - The ::marker Pseudo-element (
+            <p>
+                Phần tử giả ::marker chọn các điểm đánh dấu của các mục trong
+                danh sách.)
+            </p>
+        </h2>
+
+        <p>
+            The <code class="w3-codespan">::marker</code> pseudo-element selects
+            the markers of list items.
+        </p>
+        <p>
+            Ví dụ sau tạo kiểu cho các điểm đánh dấu của các mục trong danh
+            sách:
+        </p>
+        <p>Example</p>
+        <p>::marker { 
+            <p>
+            color: red;</p>
+            <p> font-size: 23px;</p>
+         }
+        </p>
+        <h2>
+            CSS - The ::selection Pseudo-element
+            <p>(CSS - Phần tử giả ::selection)</p>
+        </h2>
+        <p>
+            The <code class="w3-codespan">::selection</code> pseudo-element matches the portion of an element that is selected by a user.
+            <p>
+                (Phần tử giả ::selection khớp với phần của phần tử được người dùng chọn.)
+            </p>
+        </p>
+        <p>
+            The following CSS properties can be applied to 
+            <code class="w3-codespan">::selection
+
+            </code>: 
+            <code class="w3-codespan">color
+
+            </code>, 
+            <code class="w3-codespan">background
+
+            </code>, 
+            <code class="w3-codespan">cursor
+
+            </code>, and 
+            <code class="w3-codespan">outline
+            </code> .
+            <p>Các thuộc tính CSS sau có thể được áp dụng cho ::selection: màu, nền, con trỏ và đường viền.</p>
+        </p>
+        <p>The following example makes the selected text red on a yellow background:</p>
+        <p>Example</p>
+        <p>::selection { 
+            <p>
+            color: red;
+            </p>
+            <p> background: yellow </p>
+         }
+        </p>
+    </body>
+</html>

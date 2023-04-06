@@ -1,0 +1,52 @@
+body {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 120%;
+}
+
+.bnt {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 50px 80px 60px 70px;
+    background-color: red;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+p {
+    margin-top: 16px;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.btn {
+    color: black;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(30, 226, 226);
+}
+
+.content {
+    padding: 32px;
+    background-color: rgb(177, 165, 165);
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.hashtag {
+    padding: 0 4px 2px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(85, 144, 231);
+    font-size: 28px;
+}

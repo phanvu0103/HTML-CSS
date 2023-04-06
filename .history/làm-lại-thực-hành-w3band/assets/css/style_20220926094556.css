@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+}
+#header {
+  background-color: #000;
+  height: 46px;
+}
+#nav {
+}
+#nav li {
+  color: #fff;
+}
+#nav li a {
+}
+#nav .subnav {
+}
+#slider {
+}
+#content {
+}
+#footer {
+}
