@@ -60,10 +60,10 @@ $ git config --get remote.origin.url
 
 phanv@PHAN_VU MINGW64 /d/HTML CSS/F8 Shop (main)
 $
-
+git
 khôi phục file xóa
 git reset HEAD -- news.html 
 
 khôi phục tất cả file đã xóa
 git reset HEAD -- .
-github
+github gmail
