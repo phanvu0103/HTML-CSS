@@ -89,3 +89,7 @@ a {
 .header .action {
     margin-left: 49px;
 }
+/* Hero */
+.media-content {
+    position: relative;
+}
