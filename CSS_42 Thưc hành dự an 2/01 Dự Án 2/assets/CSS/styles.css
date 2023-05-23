@@ -317,3 +317,56 @@ a {
 	background: var(--prenimu-color);
 	cursor: pointer;
 }
+
+.course-list {
+	margin-top: 55px;
+	display: flex;
+	/* background: #e5e5e5; */
+}
+
+.course-list .course-item {
+	padding: 0 30px 0 0;
+}
+
+.course-item .thumb {
+	background: url(image.png);
+	border-radius: 12px 12px 0px 0px;
+}
+
+.course-item .info .head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.course-item .info {
+	margin-left: 22px;
+}
+
+.course-item .info .title {
+	margin-top: 16px;
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 1.67;
+	/* identical to box height, or 167% */
+
+	color: #171100;
+}
+
+.course-item .info .value {
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.75;
+	/* identical to box height, or 175% */
+
+	color: #fea31b;
+}
+
+.course-item .info .desc {
+	width: 326px;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 1.86;
+	/* or 186% */
+	color: #5f5b53;
+}
