@@ -65,6 +65,29 @@ a {
 	max-width: calc(100% -48px);
 }
 
+/* Popular #3 */
+/* Giới hạn dòng */
+.line-clamp {
+	/* 1 dòng tối đa */
+	display: -webkit-box;
+	-webkit-line-clamp: var(--line-clamp, 1);
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.line-clamp.line-2 {
+	/* 2 dòng tối đa */
+	--line-clamp: 2;
+}
+/* Giới hạn dòng */
+
+/* ko bẻ 1 dòng theo mặc định css mình viết */
+.break-all {
+	word-break: break-all;
+}
+/* ko bẻ 1 dòng theo mặc định css mình viết */
+/* Popular #3 */
+
 /* haeder */
 .header {
 	background: #fffcf4;
@@ -318,55 +341,90 @@ a {
 	cursor: pointer;
 }
 
-.course-list {
+/* Popular #2 */
+
+.popular .course-list {
 	margin-top: 55px;
 	display: flex;
 	/* background: #e5e5e5; */
+	gap: 30px;
 }
 
-.course-list .course-item {
-	padding: 0 30px 0 0;
+.popular .course-item {
+	flex: 1;
+	background: #ffffff;
+
+	border-radius: 12px;
 }
 
-.course-item .thumb {
-	background: url(image.png);
+.popular .course-item:hover {
+	box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+	border-color: transparent;
+}
+
+.popular .course-item .thumb {
+	margin: -1px;
+	width: calc(100% + 2px);
 	border-radius: 12px 12px 0px 0px;
+	height: 278px;
+	object-fit: cover;
 }
 
-.course-item .info .head {
+.popular .course-item .head,
+.popular .course-item .rating,
+.popular .course-item .foot {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.course-item .info {
-	margin-left: 22px;
+.popular .course-item .info {
+	padding: 16px 22px 22px;
 }
 
-.course-item .info .title {
-	margin-top: 16px;
+.popular .course-item .title a {
+	padding: 6px;
 	font-weight: 600;
 	font-size: 1.8rem;
 	line-height: 1.67;
 	/* identical to box height, or 167% */
-
 	color: #171100;
 }
 
-.course-item .info .value {
-	font-weight: 400;
+.popular .rating .value {
+	margin-left: 6px;
 	font-size: 1.6rem;
 	line-height: 1.75;
 	/* identical to box height, or 175% */
-
 	color: #fea31b;
 }
 
-.course-item .info .desc {
-	width: 326px;
+.popular .course-item .desc {
+	margin-top: 6px;
 	font-weight: 400;
 	font-size: 1.4rem;
 	line-height: 1.86;
 	/* or 186% */
 	color: #5f5b53;
+}
+
+.popular .course-item .foot {
+	margin-top: 12px;
+}
+
+.popular .course-item .price {
+	font-weight: 600;
+	font-size: 1.8rem;
+	line-height: 1.67;
+	/* identical to box height, or 167% */
+	color: #171100;
+}
+
+.popular .course-item .book-btn {
+	border: none;
+}
+
+.popular .course-item .book-btn:hover {
+	color: #fff;
+	background: var(--prenimu-color);
 }
