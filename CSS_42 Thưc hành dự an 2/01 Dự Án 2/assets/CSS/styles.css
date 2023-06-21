@@ -41,7 +41,6 @@ a {
 .heading {
 	font-family: var(--font-heading);
 	font-weight: 700;
-
 	letter-spacing: -0.02em;
 	color: #171100;
 }
@@ -427,4 +426,155 @@ a {
 .popular .course-item .book-btn:hover {
 	color: #fff;
 	background: var(--prenimu-color);
+}
+
+/* Feedback #1 */
+
+.feedback {
+	margin-top: 135px;
+	padding: 96px 0;
+	background: #2e2100;
+}
+
+.feedback .main-content {
+	/* width: 1440px; */
+	background: #2e2100;
+}
+
+.feedback .feedback-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feedback-item .info {
+	margin: 96px 0 96px 135px;
+	width: 159px;
+}
+
+.feedback-item .info .avata {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.feedback-item .info .title {
+	margin-top: 18px;
+	font-family: var(--font-heading);
+	font-size: 2.4rem;
+	line-height: 1.42x;
+	/* identical to box height, or 142% */
+	color: #f7f7f7;
+}
+
+.feedback-item .info .dots {
+	display: flex;
+	margin-top: 28px;
+}
+.feedback-item .dot {
+	margin-right: 6px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #634700;
+}
+
+.feedback-item .dot.active {
+	background: #ffb900;
+	cursor: default;
+}
+
+.feedback-item .info .desc {
+	margin-top: 4px;
+	font-size: 1.4rem;
+	line-height: 1.86;
+	/* identical to box height, or 186% */
+	color: #bfbcb3;
+}
+
+.feedback-item .content {
+	margin-left: auto;
+	width: 66%;
+}
+
+.feedback-item .content blockquote {
+	margin-left: 30px;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 2.6rem;
+	line-height: 1.54;
+	/* or 154% */
+	color: #ffffff;
+}
+
+/* Features 1 */
+
+.features {
+	margin-top: 135px;
+	padding: 65px 0;
+}
+
+.features .body {
+	display: flex;
+	justify-content: space-between;
+}
+
+.features .images {
+	display: flex;
+	gap: 0 30px;
+}
+
+.features .images img {
+	width: 270px;
+	height: 405px;
+	border-radius: 16px;
+	object-fit: cover;
+}
+
+.features img.lower {
+	margin-top: 34px;
+}
+
+.features .content {
+	width: 41%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.features .desc {
+	margin-top: 16px;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.75;
+	color: #5f5b53;
+}
+
+.features .btn-features {
+	margin-top: 32px;
+	min-width: 137px;
+	color: #fff;
+	background: var(--prenimu-color);
+	border-radius: 26px;
+}
+
+/* features - 2 */
+
+.features-2nd {
+	margin-top: 70px;
+}
+
+.features-2nd .body {
+	flex-direction: row-reverse;
+}
+
+.features-2nd .content {
+	width: 49%;
+}
+
+.features-2nd .images img {
+	width: 470px;
+	height: 440px;
 }
