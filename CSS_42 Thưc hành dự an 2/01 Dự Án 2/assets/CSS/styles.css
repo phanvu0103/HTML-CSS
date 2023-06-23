@@ -57,6 +57,17 @@ a {
 	/* identical to box height, or 126% */
 }
 
+.heading.lv3 {
+	/* font-size: 3.8rem;
+	line-height: 1.26; */
+	/* identical to box height, or 126% */
+	color: #fff;
+	font-size: 1.6rem;
+	font-family: Poppins;
+	font-weight: 600;
+	line-height: 28px;
+}
+
 .main-content {
 	width: 1170px;
 	margin-left: auto;
@@ -612,6 +623,10 @@ a {
 	border-radius: 16px;
 }
 
+.blog .items:hover {
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
 .blog .items .thumb {
 	border-radius: 16px 16px 0px 0px;
 	width: 100%;
@@ -624,6 +639,7 @@ a {
 	display: inline-flex;
 	align-items: center;
 	margin-top: 20px;
+	margin-left: 20px;
 	font-size: 1.4rem;
 	line-height: 1.86;
 	/* identical to box height, or 186% */
@@ -655,6 +671,7 @@ a {
 .blog .info .title {
 	margin-top: 25px;
 	width: 330px;
+	margin-left: 20px;
 	font-size: 1.6rem;
 	line-height: 1.75;
 	/* or 175% */
@@ -662,7 +679,9 @@ a {
 }
 
 .blog .info .blog-btn {
+	margin-left: 20px;
 	margin-top: 12px;
+	margin-bottom: 20px;
 	width: 118px;
 	height: 50px;
 	background: #171100;
@@ -679,4 +698,58 @@ a {
 .blog .info .blog-btn:hover {
 	color: #fff;
 	background: var(--prenimu-color);
+}
+
+.blog .dots {
+	margin-top: 38px;
+	display: flex;
+	justify-content: center;
+	gap: 6px;
+}
+.blog .dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #634700;
+	cursor: pointer;
+}
+
+.blog .dot.active {
+	background: var(--prenimu-color);
+	cursor: default;
+}
+
+/* footer */
+.footer {
+	margin-top: 96px;
+	background: #ce9810;
+}
+
+.footer .row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer .row .column {
+	width: 21.6%;
+}
+
+.footer .row .column:first-child {
+	width: 35%;
+}
+
+.footer .column .desc {
+	width: 298px;
+	margin-top: 18px;
+	color: #bfbcb2;
+	font-size: 1.4rem;
+	line-height: 26px;
+}
+
+.footer .socials {
+	margin-top: 18px;
+	gap: 30%;
+}
+
+.footer .social a .icon {
 }
