@@ -721,13 +721,15 @@ a {
 
 /* footer */
 .footer {
-	margin-top: 96px;
-	background: #ce9810;
+	padding: 96px 135px 0;
+	background: #2e2100;
 }
 
 .footer .row {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
+	padding-bottom: 38px;
+	border-bottom: 1px solid #59554b;
 }
 
 .footer .row .column {
@@ -739,17 +741,59 @@ a {
 }
 
 .footer .column .desc {
-	width: 298px;
 	margin-top: 18px;
+	max-width: 267px;
 	color: #bfbcb2;
 	font-size: 1.4rem;
-	line-height: 26px;
+	line-height: 1.86;
+	/* 26px to 186% */
 }
 
 .footer .socials {
 	margin-top: 18px;
-	gap: 30%;
+	display: flex;
+	gap: 18px;
 }
 
-.footer .social a .icon {
+.footer .list {
+	margin-top: 28px;
+}
+
+.footer .list strong {
+	font-weight: 600;
+	color: #fff;
+}
+
+.footer .list a {
+	margin-bottom: 12px;
+	color: #bfbcb2;
+	font-size: 1.4rem;
+	font-family: Poppins;
+	line-height: 1.86;
+	/* 26px to 186% */
+}
+
+.footer .list li:last-child a {
+	margin-bottom: 0;
+}
+
+.footer .title {
+	display: inline-block;
+	padding: 0 48px 14px 0;
+	border-bottom: 1px solid #59554b;
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.75;
+}
+
+.footer .copyright {
+	padding: 28px 0;
+}
+
+.footer .copyright p {
+	color: #807d74;
+	font-size: 1.4rem;
+	line-height: 1.62;
+	text-align: center;
 }
