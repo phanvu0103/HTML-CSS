@@ -1,0 +1,265 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--prenimu-color: #1ebfc1;
+	--font-heading: "Poppins", sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: "Poppins", sans-serif;
+}
+/* Common */
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0 16px;
+	width: 186px;
+	line-height: normal;
+	font-weight: 600;
+	font-size: 1.8rem;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 14px;
+	background: #1ebfc1;
+	/* box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05); */
+}
+
+.btn:hover {
+	opacity: 0.9;
+}
+
+.heading {
+	font-family: var(--font-heading);
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	color: #171100;
+}
+
+.heading.lv1 {
+	font-size: 6.2rem;
+	line-height: 7.2rem;
+	/* or 117% */
+}
+
+.heading.lv2 {
+	font-size: 3.8rem;
+	line-height: 1.26;
+	/* identical to box height, or 126% */
+}
+
+.heading.lv3 {
+	/* font-size: 3.8rem;
+	line-height: 1.26; */
+	/* identical to box height, or 126% */
+	color: #fff;
+	font-size: 1.6rem;
+	font-family: Poppins;
+	font-weight: 600;
+	line-height: 28px;
+}
+
+.main-content {
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: calc(100% -48px);
+}
+
+/* Giới hạn dòng */
+.line-clamp {
+	/* 1 dòng tối đa */
+	display: -webkit-box;
+	-webkit-line-clamp: var(--line-clamp, 1);
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.line-clamp.line-2 {
+	/* 2 dòng tối đa */
+	--line-clamp: 2;
+}
+/* Giới hạn dòng */
+
+/* ko bẻ 1 dòng theo mặc định css mình viết */
+.break-all {
+	word-break: break-all;
+}
+/* ko bẻ 1 dòng theo mặc định css mình viết */
+
+/* Header */
+.header {
+	background: #ffffff;
+}
+
+.header.fixed {
+	position: sticky;
+	top: -49px;
+}
+
+.header.fixed .body {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 57px 0 8px;
+}
+
+.header.fixed .body .nav {
+	padding-left: 43px;
+}
+
+.header.fixed .nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* gap: 39px; */
+}
+
+.header.fixed.nav .active a {
+	color: #2f3a3b;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.header.fixed .nav a {
+	padding: 8px 20px;
+	color: #2f3a3b;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.header.fixed .nav a:hover {
+	text-shadow: 1px 0 0 currentColor;
+}
+
+.header.fixed .nav .action a {
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* gap: 24px; */
+}
+
+.header.fixed .action a {
+	padding-right: 24px;
+	max-width: 108px;
+	color: #494949;
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: normal;
+}
+.header.fixed .action .sign-up-btn {
+	padding: 12px 24px;
+	max-width: 110px;
+	color: #1ebfc1;
+	font-size: 1.6rem;
+	line-height: normal;
+	border-radius: 6px;
+	border: 1px solid #1ebfc1;
+	background: #fff;
+}
+
+/* hero */
+.hero {
+	margin-top: 42px;
+}
+
+.hero .body {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Hero left */
+.hero .content-block {
+	position: relative;
+	width: 45%;
+	padding: 84px 136px 0 0;
+}
+
+.hero .media-block {
+	margin-right: auto;
+}
+
+.hero .content-block .lv1 {
+	width: 458px;
+	margin-top: 18px;
+}
+
+.hero .content-block .desc-cta {
+	margin-top: 46px;
+	width: 353px;
+	color: #9da6a5;
+	font-size: 1.8rem;
+	line-height: 1.77;
+}
+
+.hero .content-block .cta-group {
+	margin-top: 52px;
+	display: flex;
+	align-items: center;
+}
+
+.hero .content-block a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero .content-block .hero-cta {
+	width: 186px;
+	height: 68px;
+	text-align: center;
+	flex-shrink: 0;
+	border-radius: 14px;
+	background: #1ebfc1;
+}
+.hero .content-block .hero-cta:hover {
+	box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .content-block .watch-video {
+	display: flex;
+	align-items: center;
+	border: none;
+	margin-left: 50px;
+	width: 202px;
+	background: #fff;
+	/* border-radius: 50%; */
+}
+
+.hero .content-block .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 62px;
+	height: 62px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.hero .content-block .icon:hover {
+	box-shadow: 0px 22px 50px 0px rgba(0, 0, 0, 0.05);
+	/* border-color: transparent; */
+}
+
+/* Hero right */
+.hero .media-block .img {
+	display: block;
+	margin-left: 10px;
+	width: 641px;
+	height: 631px;
+	object-fit: cover;
+}

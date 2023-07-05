@@ -4,7 +4,7 @@
 
 :root {
 	--prenimu-color: #ffb900;
-	--font-heading: Sen, sans-serif;
+	--font-heading: "Sen", sans-serif;
 }
 
 html {
@@ -181,7 +181,7 @@ a {
 	display: block;; */
 }
 
-.hero-summary {
+.hero .hero-summary {
 	position: absolute;
 	/* padding: 24px; */
 	width: 270px;
@@ -192,24 +192,24 @@ a {
 	border-radius: 12px;
 }
 
-.hero-summary .item {
+.hero .hero-summary .item {
 	display: flex;
 	align-items: center;
 	margin: 24px;
 }
 
-.hero-summary .item + .item {
+.hero .hero-summary .item + .item {
 	margin-top: 22px;
 }
-.hero-summary .item:nth-of-type(2) .icon {
+.hero .hero-summary .item:nth-of-type(2) .icon {
 	background: #fcefff;
 }
 
-.hero-summary .item:nth-of-type(3) .icon {
+.hero .hero-summary .item:nth-of-type(3) .icon {
 	background: #ebeaff;
 }
 
-.hero-summary .icon {
+.hero .hero-summary .icon {
 	width: 48px;
 	height: 48px;
 	display: flex;
@@ -219,17 +219,17 @@ a {
 	border-radius: 50%;
 }
 
-.hero-summary .info {
+.hero .hero-summary .info {
 	margin-left: 16px;
 }
 
-.hero-summary .label {
+.hero .hero-summary .label {
 	font-size: 1.4rem;
 	line-height: 1.86;
 	color: #5f5b53;
 }
 
-.hero-summary .title {
+.hero .hero-summary .title {
 	font-weight: 600;
 	font-size: 1.8rem;
 	line-height: 1.67;
