@@ -2,6 +2,19 @@
 	box-sizing: border-box;
 }
 
+@media screen and (max-width: 1024px) and (min-width: 970px) {
+}
+@media screen and (max-width: 970px) {
+}
+@media screen and (max-width: 870px) and (min-width: 750px) {
+}
+@media screen and (max-width: 750px) and (min-width: 680px) {
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+}
+@media screen and (max-width: 380px) {
+}
+
 :root {
 	--prenimu-color: #1ebfc1;
 	--font-heading: "Poppins", sans-serif;
@@ -14,6 +27,7 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: "Poppins", sans-serif;
+	width: 1441px;
 }
 /* Common */
 
