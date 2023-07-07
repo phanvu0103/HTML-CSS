@@ -27,7 +27,7 @@ html {
 body {
 	font-size: 1.6rem;
 	font-family: "Poppins", sans-serif;
-	width: 1441px;
+	min-width: 1441px;
 }
 /* Common */
 
