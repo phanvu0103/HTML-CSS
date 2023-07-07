@@ -107,7 +107,8 @@ a {
 
 /* Header */
 .header {
-	background: #ffffff;
+	background: #c50a0a;
+	z-index: 1;
 }
 
 .header.fixed {
