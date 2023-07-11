@@ -1,0 +1,29 @@
+* {
+	/* margin: 0;
+    padding: 0; */
+	box-sizing: border-box;
+}
+
+body {
+	padding: 8px;
+	font-family: system-ui, sans-serif;
+}
+
+h1 {
+	color: blue;
+	font-size: 35px;
+	margin: 20px;
+	text-align: center;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 60px 80px 80px 80px;
+}
+
+.item {
+	font-size: 24px;
+	background-color: blue;
+	border: 1px solid #333;
+}
