@@ -257,6 +257,7 @@ a {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	transition: 0.25s;
 }
 
 .section-heading {
@@ -283,7 +284,6 @@ a {
 
 .section-row {
 	margin-top: 70px;
-	margin-bottom: 170px;
 	display: flex;
 	align-items: center;
 }
@@ -305,19 +305,124 @@ a {
 	display: flex;
 }
 
-svg {
-	margin: -8px 0 47px 22px;
+.section-item:hover {
+	position: relative;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.section-item:hover .section-item__icon {
+	background: #2e80ce;
+	color: #fff;
+}
+
+.section-item__icon {
+	margin: 21px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background: #eff6fd;
+	border-radius: 50%;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.05);
+	transition: 0.25s;
+}
+
+.section-item__body {
+	margin: 20px 19px;
 }
 
 .section-item__heading {
 	color: #10375c;
 	font-size: 1.8rem;
 	font-weight: 600;
+	line-height: 1.27;
 }
 
 .section-item__desc {
+	margin-bottom: 20px;
 	color: #575f66;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.75; /* 175% */
+}
+
+.services-btn {
+	margin-top: 55px;
+}
+
+/* How it works */
+.work {
+	margin-top: 170px;
+	background: #f6fbff;
+}
+
+.work-heading {
+	margin-top: 100px;
+	text-align: start;
+}
+
+.work-desc {
+	margin-top: 18px;
+	text-align: start;
+}
+
+.work-row {
+	margin-top: 70px;
+}
+
+.work-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.work-item {
+	width: 352px;
+	height: 402px;
+	border-radius: 4px;
+	border: 16px solid #eaf6ff;
+	background: #fff;
+}
+
+.work-item:hover {
+	border: 16px solid #2e80ce;
+	background: #fff;
+}
+
+.work-items {
+	width: 352px;
+	height: 402px;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.work-item__2 {
+	margin-top: 16px;
+	margin-bottom: 100px;
+}
+
+.work-item__icon {
+	margin: 43px 0 0 42px;
+}
+
+.work__heading {
+	margin-top: 18px;
+	color: #10375c;
+	font-size: 2.6rem;
+	font-weight: 600;
+	line-height: 1.38; /* 138.462% */
+}
+
+.work__desc {
+	margin-top: 28px;
+}
+
+.work__link {
+	margin: 18px 0 43px;
+}
+
+.work__link a:hover {
+	color: #2e80ce;
 }
