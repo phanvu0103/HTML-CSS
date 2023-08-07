@@ -12,9 +12,9 @@
 		<!-- Embed FONTS  -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Sora:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet" />
 
 		<!-- Favicon -->
 		<link
@@ -494,10 +494,10 @@
 						</article>
 					</div>
 
-					<!-- Member Control -->
+					<!--Control -->
 					<div class="member__control">
 						<!-- Previous -->
-						<button class="member__control-btn">
+						<button class="control-btn">
 							<svg
 								width="6"
 								eight="12"
@@ -513,9 +513,9 @@
 						</button>
 
 						<!-- Next -->
-						<button class="member__control-btn">
+						<button class="control-btn">
 							<svg
-								class="member__control-icon-next"
+								class="control-icon-next"
 								width="6"
 								eight="12"
 								viewBox="0 0 6 12"
@@ -585,11 +585,113 @@
 			<!-- News  -->
 			<section class="news">
 				<div class="container">
-					<sectiom class="neus__content">
-						<h2 class="section-heading">
-							Read Latest News & Events.
-						</h2>
-					</sectiom>
+					<!-- news__content -->
+					<div class="news__inner">
+						<section class="news__content">
+							<h2 class="section-heading news--heading">
+								Read Latest News & Events.
+							</h2>
+							<p class="news__desc">
+								<a href="#!" class="news__more">
+									Read All Blog
+								</a>
+							</p>
+
+							<div class="news__control">
+								<!-- Previous -->
+								<button class="control-btn">
+									<svg
+										width="6"
+										eight="12"
+										viewBox="0 0 6 12"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M5.5 1L0.5 6L5.5 11"
+											stroke="currentColor"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+
+								<!-- Next -->
+								<button class="control-btn">
+									<svg
+										class="control-icon-next"
+										width="6"
+										eight="12"
+										viewBox="0 0 6 12"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M5.5 1L0.5 6L5.5 11"
+											stroke="currentColor"
+											stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+							</div>
+						</section>
+
+						<!-- news__list -->
+						<div class="news__list">
+							<!-- news-item 1 -->
+							<article class="news-item">
+								<a href="#!">
+									<figure>
+										<img
+											src="./assets/img/news-01.png"
+											alt=""
+											class="news-item__thumb" />
+									</figure>
+								</a>
+								<section class="news-item__body">
+									<h3>
+										<a href="#!"
+											>Key Considerations for Regulatory
+											Compliant.
+										</a>
+									</h3>
+									<p class="news-item__desc">
+										It’s easy to think about medical care
+										from a narrow perspective. You go to the
+										hospital.
+									</p>
+									<a href="#!" class="news-item__more"
+										>Learn More
+									</a>
+								</section>
+							</article>
+
+							<!-- news-item 2 -->
+							<article class="news-item">
+								<a href="#!">
+									<figure>
+										<img
+											src="./assets/img/news-02.png"
+											alt=""
+											class="news-item__thumb" />
+									</figure>
+								</a>
+								<section class="news-item__body">
+									<h3>
+										<a href="#!"
+											>Key Considerations for Regulatory
+											Compliant.
+										</a>
+									</h3>
+									<p class="news-item__desc">
+										It’s easy to think about medical care
+										from a narrow perspective. You go to the
+										hospital.
+									</p>
+									<a href="#!" class="news-item__more"
+										>Learn More
+									</a>
+								</section>
+							</article>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
