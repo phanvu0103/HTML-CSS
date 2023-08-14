@@ -78,6 +78,12 @@
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
 		<meta name="theme-color" content="#ffffff" />
 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link 
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+		rel="stylesheet">
+
 		<!-- Styles -->
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 	</head>
@@ -166,7 +172,7 @@
 				</section>
 			</div>
 		</header>
-		<main style="height: 5000px">
+		<main>
 			<!-- Services -->
 			<section class="services">
 				<div class="container">
@@ -637,7 +643,7 @@
 						<div class="news__list">
 							<!-- news-item 1 -->
 							<article class="news-item">
-									<figure>
+									<figure class="news-item__img" >
 										<a href="#!">
 											<img
 											src="./assets/img/news-01.png"
@@ -670,7 +676,7 @@
 							<!-- news-item 2 -->
 							<article class="news-item">
 								
-									<figure>
+									<figure class="news-item__img" >
 										<a href="#!">
 											<img
 											src="./assets/img/news-02.png"
@@ -703,6 +709,138 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- Appointment -->
+			<section class="appointment">
+				<div class="container">
+					<section class="appointment__inner">
+						<h2 class="section-heading appointment-heading">
+							Always welcoming new patients
+						</h2>
+						<p class="desc appointment__desc">
+							Take control of your dental health and get the personalized care you
+							deserve. Call (541) 772-8846 to  schedule
+						</p>
+						<a href="#!" class="btn appointment__cta">
+							Appointment
+						</a>
+					</section>
+				</div>
+
+			</section>
 		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-row">
+					<!-- footer__column 1 -->
+					<div class="footer__column">
+						<a href="./index.html">
+								<div class="logo">
+									<span class="logo__circle"></span>
+									<span class="logo__text">
+										<span class="logo__brand">shine</span>
+										<span class="logo__brand logo__brand--smile">
+											smile
+										</span>
+									</span>
+								</div>
+						</a>
+						<p class="footer__desc">
+							Exceptional dental care for all ages. Your great smile begins with a
+							great dentist.
+						</p>
+					</div>
+					<!-- footer__column 2 -->
+					<div class="footer__column footer__column-1">
+						<h3 class="footer__heading">Support</h3>
+						<ul class="footer__list">
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >Help center</a> 
+							</li>
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >
+									Account information
+								</a> 
+							</li>
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >About</a> 
+							</li>
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >Contact us</a> 
+							</li>
+						</ul>
+						<h3 class="footer__heading footer__heading-2">Support</h3>
+						<ul class="footer__list">
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >Help center</a> 
+							</li>
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >
+									Account information
+								</a> 
+							</li>
+						</ul>
+					</div>
+					<!-- footer__column 3 -->
+					<div class="footer__column footer__column-1">
+						<h3 class="footer__heading">Support</h3>
+						<ul class="footer__list">
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >Help center</a> 
+							</li>
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >Account information</a> 
+							</li>
+						</ul>
+						<h3 class="footer__heading footer__heading-2">Support</h3>
+						<ul class="footer__list">
+							<li class="footer__list--desc">
+								<a href="#!" class="footer__list--descs " >Help center</a> 
+							</li>		
+						</ul>
+					</div>
+					<!-- footer__column 4 -->
+					<div class="footer__column">
+						<h3 class="footer__heading">Stay In Touch</h3>
+						<figure class="footer__images">
+							<img 
+							src="./assets/icon/Facebook.svg" 
+							alt="" 
+							class="footer__images--img">
+							<img 
+							src="./assets/icon/witer.svg" 
+							alt="" 
+							class="footer__images--img">
+							<img 
+							src="./assets/icon/ind.svg" 
+							alt="" 
+							class="footer__images--img">
+						</figure>
+						<h3 class="footer__heading footer__heading-2">Subscribe</h3>
+						<p class="footer__desc">
+							Subscribe our newsletter for the latest update of Dental care
+						</p>
+						<form action="">
+							<input 
+							type="email" 
+							name="email" 
+							id="email" 
+							placeholder="Enter your email...">
+							<button class="btn footer__Subscribe">
+								Subscribe
+							</button>
+						</form>
+					</div>
+					
+				</div>
+				<div class="footer__copyright">
+					<p class="desc">
+						2021 GDN. Copyright and All rights reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
