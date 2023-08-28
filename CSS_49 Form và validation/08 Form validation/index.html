@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form validation</title>
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+	</head>
+	<body>
+		<h1>Form validation</h1>
+		<ul>
+			<li>
+				Form validation
+				<input type="checkbox" />
+			</li>
+			<li>
+				required (trường hợp bắt buột phải nhập)
+				<input type="checkbox" />
+			</li>
+			<li>
+				<input type="checkbox" />
+			</li>
+			<li>
+				<input type="checkbox" />
+			</li>
+		</ul>
+		<h2>Liên Hệ</h2>
+		<form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+			<div class="form-name">
+				<label for="form-name">Tên của Bạn</label><br />
+				<input
+					type="text"
+					name="username"
+					id="username"
+					placeholder="nhập tên"
+					required />
+			</div>
+			<div class="form-email">
+				<label for="form-email">Email</label><br />
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Nhập email"
+					required
+					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+			</div>
+			<div class="form-tel">
+				<label for="form-tel">Số Điện Thoại</label><br />
+				<input
+					type="tel"
+					name="phone"
+					id="phone"
+					placeholder="nhập số điện thoại"
+					required
+					pattern="+84, 84, 0: ^(0|\+?84)(3|5|7|8|9)[0-9]{8}$" />
+			</div>
+			<br />
+			<button type="submit">Gởi Đi</button>
+		</form>
+	</body>
+</html>

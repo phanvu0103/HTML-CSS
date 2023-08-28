@@ -19,28 +19,10 @@ li {
 	margin-bottom: 2px;
 }
 
-body {
-	font-family: system-ui;
+.form {
+	margin: 100px;
 }
 
-table {
-	margin: 50px;
-	border-collapse: collapse;
-}
-
-table,
-table td,
-table th {
-	border: 1px solid #666;
-}
-
-table td,
-table,
-table th {
-	padding: 4px 8px;
-}
-
-td {
-	text-align: center;
-	align-items: center;
+.password {
+	margin-left: 32px;
 }

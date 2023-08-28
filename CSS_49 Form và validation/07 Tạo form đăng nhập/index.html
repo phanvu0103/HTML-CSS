@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Multi Level Dropdown Menu</title>
+		<title>Form</title>
 		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 		<link
 			rel="stylesheet"
@@ -15,20 +15,26 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 	</head>
 	<body>
-		<h1></h1>
-		<ul>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-		</ul>
+		<h1>Form</h1>
+
+		<main>
+			<h2>Login</h2>
+
+			<form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" />
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" />
+				</div>
+
+				<div class="form-group">
+					<button class="btn" type="submit">Login</button>
+				</div>
+			</form>
+		</main>
 	</body>
 </html>

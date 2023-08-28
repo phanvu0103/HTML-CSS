@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Multi Level Dropdown Menu</title>
+		<title>Form</title>
 		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 		<link
 			rel="stylesheet"
@@ -15,9 +15,10 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 	</head>
 	<body>
-		<h1></h1>
+		<h1>Form</h1>
 		<ul>
 			<li>
+				Submit và Button
 				<input type="checkbox" />
 			</li>
 			<li>
@@ -30,5 +31,30 @@
 				<input type="checkbox" />
 			</li>
 		</ul>
+		<form action="https://api-gateway.fullstack.edu.vn/action_page.php">
+			<div class="form-name">
+				<label for="username">Tên Đăng Nhập</label>
+				<br />
+				<input
+					type="username"
+					name="username"
+					id="username"
+					placeholder="Tên Đăng Nhập" />
+			</div>
+			<br />
+			<div class="form-pass">
+				<label for="password">Mật Khẩu</label>
+				<br />
+				<input
+					type="password"
+					name="password"
+					id="password"
+					placeholder="Mật Khẩu" />
+			</div>
+			<br />
+			<input type="submit" value="Đăng Nhập input submit" /><br />
+			<input type="button" value="Đăng Nhập input button" /><br />
+			<button type="submit">Đăng Nhập button</button>
+		</form>
 	</body>
 </html>
