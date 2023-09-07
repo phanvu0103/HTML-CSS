@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Form</title>
+		<title>Validation với CSS</title>
 		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 		<link
 			rel="stylesheet"
@@ -15,22 +15,19 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 	</head>
 	<body>
-		<h1>Form</h1>
 		<ul>
+			Validation với CSS
 			<li>
-				Thẻ textarea
+				Pattern email: [a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$
 				<input type="checkbox" />
 			</li>
 			<li>
-				(resize ko cho kéo dài nội dung nhập)
 				<input type="checkbox" />
 			</li>
 			<li>
-				rows="5" tăng hàng cho nội dung
 				<input type="checkbox" />
 			</li>
 			<li>
-				select
 				<input type="checkbox" />
 			</li>
 			<li>
@@ -38,55 +35,41 @@
 			</li>
 		</ul>
 
-		<h2>Liên Hệ</h2>
-		<br />
-		<form action="https://api-gateway.fullstack.edu.vn/action_page.php">
-			<div class="form-name">
-				<label for="form-name">Tên của Bạn</label><br />
-				<input
-					type="text"
-					name="username"
-					id="username"
-					placeholder="nhập tên"
-					required />
-			</div>
-			<br />
-			<div class="form-email">
-				<label for="form-email">Email</label><br />
-				<input
-					type="email"
-					name="email"
-					id="email"
-					placeholder="Nhập email"
-					required
-					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-			</div>
-			<br />
-			<div class="form-address">
-				<label for="form-address">Đại Chỉ</label><br />
-				<select name="form-address" id="address" required>
-					<br />
-					<option value="">--Chọn TP--</option>
-					<option value="Sài Gòn">Sài Gòn</option>
-					<option value="Đà Nẵng">Đà Nẵng</option>
-					<option value="Nha Trang">Nha Trang</option>
-				</select>
-			</div>
-			<br />
-			<div class="form-content">
-				<label for="form-content">Nội Dung</label><br />
+		<main>
+			<h1>Login</h1>
 
-				<textarea
-					type="text"
-					name="content"
-					id="content"
-					rows="5"
-					placeholder="nhập nội dung"
-					required>
-				</textarea>
-			</div>
-			<br />
-			<button type="submit">Gởi Đi</button>
-		</form>
+			<form
+				method="post"
+				action="https://api-gateway.fullstack.edu.vn/action_page.php"
+				autocomplete="off">
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						required
+						pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+						placeholder="Nhập email..." />
+					<p class="error">Vui lòng nhập đúng email</p>
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						required
+						minlength="6"
+						placeholder="Nhập mật khẩu..." />
+					<p class="error">Mật khẩu cần ít nhất 6 kí tự</p>
+				</div>
+
+				<div class="form-group">
+					<button class="btn submit-btn" type="submit">Login</button>
+				</div>
+			</form>
+		</main>
 	</body>
 </html>
