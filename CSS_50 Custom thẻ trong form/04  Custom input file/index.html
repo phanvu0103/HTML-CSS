@@ -15,59 +15,55 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 	</head>
 	<body>
-		<h1></h1>
-		<ul>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-		</ul>
-
 		<main>
-			<h1>Đăng bài</h1>
+			<h1>Profile</h1>
 
 			<form
+				method="post"
 				action="https://api-gateway.fullstack.edu.vn/action_page.php"
-				autocomplete="off">
+				autocomplete="off"
+				enctype="multipart/form-data">
 				<div class="form-group">
-					<label for="title">Tiêu đề</label>
+					<label class="form-label" for="name">Name</label>
 					<input
+						class="form-input"
 						type="text"
-						id="title"
-						name="title"
-						placeholder="Nhập tiêu đề..." />
+						id="name"
+						name="name"
+						value="Nguyen Van A"
+						required />
 				</div>
 
 				<div class="form-group">
-					<label for="editor" onclick="editor.focus()"
-						>Nội dung</label
-					>
-					<div
-						id="editor"
-						class="editor"
-						contenteditable=""
-						placeholder="Nhập nội dung..."
-						name="content"
-						oninput="content.innerHTML = this.innerHTML"></div>
-					<textarea id="content" name="content" hidden></textarea>
+					<label class="form-label" for="bio">Bio</label>
+					<input
+						class="form-input"
+						type="text"
+						id="bio"
+						name="bio"
+						value="Stop thinking start doing"
+						required />
 				</div>
 
 				<div class="form-group">
-					<button class="btn" type="submit">Đăng bài</button>
+					<label class="form-label" for="avatar">Avatar</label>
+					<input
+						type="file"
+						id="avatar"
+						name="avatar"
+						hidden
+						onchange="preview.src=window.URL.createObjectURL(this.files[0])" />
+					<label for="avatar">
+						<img
+							id="preview"
+							class="avatar-preview"
+							src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png"
+							alt="" />
+					</label>
+				</div>
+
+				<div class="form-group">
+					<button class="btn" type="submit">Save</button>
 				</div>
 			</form>
 		</main>
