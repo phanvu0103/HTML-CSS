@@ -14,14 +14,14 @@ html {
 }
 
 body {
-	background: #f9f9fb;
+	background: #f7f7fa;
 }
 
 body,
 input,
 textarea,
 button {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
 		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
 		sans-serif;
@@ -38,7 +38,7 @@ main {
 	margin: 60px auto 0;
 	padding: 6px;
 	border-radius: 10px;
-	background: #fff;
+	background: #ffffff;
 }
 
 /* Heading */
@@ -61,7 +61,7 @@ main {
 .contact-info {
 	position: relative;
 	flex-shrink: 0;
-	width: 330px;
+	width: 370px;
 	padding: 24px 30px 30px;
 	border-radius: 10px;
 	color: #fff;
@@ -75,14 +75,19 @@ main {
 }
 
 .contact-info .desc {
+	font-weight: 600;
 	margin-top: 10px;
-	font-size: 1.3rem;
+	font-size: 1.09rem;
 	line-height: 1.6;
 	color: #9e8dd3;
 }
 
 .contact-info .info-item {
 	margin-top: 36px;
+}
+
+.info_item {
+	margin-top: 60px;
 }
 
 .contact-info .info-item .icon {
@@ -101,7 +106,7 @@ main {
 .socials {
 	display: flex;
 	column-gap: 10px;
-	margin-top: 110px;
+	margin-top: 210px;
 }
 
 .socials .item {
@@ -168,19 +173,24 @@ main {
 	border-color: #5e2fe1;
 }
 
+/* cho lỗi hiện lên khi nhập vào */
+.form-group:has(:invalid :not(:placeholder-shown)) .form-error {
+	display: block;
+}
+
 .form-label,
 .form-input {
 	display: block;
 }
 
 .form-label {
-	font-size: 1.7rem;
+	font-size: 1.2rem;
 	font-weight: 700;
 	color: #2a2b3f;
 }
 
 .form-label.large {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 /* row 4  Messager:form-textarea */
@@ -206,7 +216,10 @@ main {
 	overflow-y: hidden;
 }
 
+/* form-erro */
 .form-error {
+	margin-top: 4px;
+	color: red;
 	display: none;
 }
 
@@ -265,4 +278,37 @@ main {
 	border-left: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	rotate: -45deg;
+}
+
+textarea {
+	height: 60px;
+}
+
+/* row 5  Send Messager */
+.submit-box {
+	/* display: flex; */
+	height: 50px;
+	justify-content: flex-end;
+}
+
+.submit-btn {
+	margin-top: 15px;
+	min-width: 190px;
+	height: 50px;
+	color: #fff;
+	background: var(--primary-color);
+	font-weight: 600;
+	font-size: 1.2rem;
+	outline: none;
+	border: none;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.submit-btn:hover {
+	opacity: 0.9;
+	cursor: pointer;
 }

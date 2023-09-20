@@ -33,23 +33,25 @@
 						within 24 hours.
 					</p>
 
-					<div class="info-item">
-						<span class="icon">
-							<i class="fa-solid fa-phone"></i>
-						</span>
-						<span class="value">+84123456789</span>
-					</div>
-					<div class="info-item">
-						<span class="icon">
-							<i class="fa-solid fa-envelope"></i>
-						</span>
-						<span class="value">abc@gmail.com</span>
-					</div>
-					<div class="info-item">
-						<span class="icon">
-							<i class="fa-solid fa-location-dot"></i>
-						</span>
-						<span class="value">123 Nguyen Chi Thanh</span>
+					<div class="info_item">
+						<div class="info-item">
+							<span class="icon">
+								<i class="fa-solid fa-phone"></i>
+							</span>
+							<span class="value">+84123456789</span>
+						</div>
+						<div class="info-item">
+							<span class="icon">
+								<i class="fa-solid fa-envelope"></i>
+							</span>
+							<span class="value">abc@gmail.com</span>
+						</div>
+						<div class="info-item">
+							<span class="icon">
+								<i class="fa-solid fa-location-dot"></i>
+							</span>
+							<span class="value">123 Nguyen Chi Thanh</span>
+						</div>
 					</div>
 
 					<div class="socials">
@@ -73,7 +75,9 @@
 
 				<!-- Contact form -->
 				<div class="contact-form">
-					<form action="" autocomplete="off">
+					<form
+						action="https://api-gateway.fullstack.edu.vn/action_page.php"
+						autocomplete="off">
 						<!-- row 1 First Name-->
 						<div class="form-row">
 							<div class="form-group">
@@ -84,8 +88,11 @@
 								<input
 									type="text"
 									id="first-name"
+									name="first-name"
 									class="form-input"
-									placeholder="Enter first name" />
+									placeholder="Enter first name"
+									required
+									minlength="2" />
 
 								<p class="form-error">
 									Vui Lòng Nhập Trường hợp này
@@ -100,8 +107,11 @@
 								<input
 									type="text"
 									id="first-name"
+									name="first-name"
 									class="form-input"
-									placeholder="Enter Last name" />
+									placeholder="Enter Last name"
+									required
+									minlength="2" />
 
 								<p class="form-error">
 									Vui Lòng Nhập Trường hợp này
@@ -119,9 +129,12 @@
 								<input
 									type="email"
 									id="email"
+									name="email"
 									class="form-input"
 									placeholder="hello@gmail.com"
-									value="hello@gmail.com" />
+									value="hello@gmail.com"
+									required
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
 
 								<p class="form-error">
 									Vui Lòng Nhập Trường hợp này
@@ -134,9 +147,12 @@
 
 								<input
 									type="tel"
-									id="Phone"
+									id="phone"
+									name="phone"
 									class="form-input"
-									placeholder="Enter Phone" />
+									placeholder="Enter Phone"
+									required
+									pattern="^(0|\+?84)(3|5|7|8|9)[0-9]{8}$" />
 
 								<p class="form-error">
 									Vui Lòng Nhập Trường hợp này
@@ -157,7 +173,8 @@
 										<input
 											type="radio"
 											name="type"
-											id="web-design" />
+											id="web-design"
+											required />
 										<label for="web-design">
 											Web Design
 										</label>
@@ -168,7 +185,8 @@
 										<input
 											type="radio"
 											name="type"
-											id="web-development" />
+											id="web-development"
+											required />
 										<label for="web-development">
 											Web Development
 										</label>
@@ -179,7 +197,8 @@
 										<input
 											type="radio"
 											name="type"
-											id="logo-design" />
+											id="logo-design"
+											required />
 										<label for="logo-design">
 											Logo Design
 										</label>
@@ -190,7 +209,8 @@
 										<input
 											type="radio"
 											name="type"
-											id="other" />
+											id="other"
+											required />
 										<label for="other"> Other </label>
 									</div>
 								</div>
@@ -211,8 +231,18 @@
 									name="message"
 									id="message"
 									class="form-textarea"
-									placeholder="What your message..."></textarea>
+									required
+									minlength="10"
+									placeholder="What your message...">
+								</textarea>
 							</div>
+						</div>
+
+						<!-- row 5  Send Messager-->
+						<div class="form-row submit-box">
+							<button class="submit-btn" type="submit">
+								Send Messager
+							</button>
 						</div>
 					</form>
 				</div>
