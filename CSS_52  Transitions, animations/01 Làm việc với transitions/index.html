@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Làm việc với transitions</title>
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+	</head>
+	<body>
+		<h1>Làm việc với transitions</h1>
+		<ul>
+			<li>
+				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
+				Transitions là gì?
+			</li>
+			<li>
+				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
+				Thuộc tính liên quan khác
+			</li>
+			<li>
+				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
+				Lỗi thường gặp
+			</li>
+			<li>
+				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
+				Hỗ trợ transition, animation?
+			</li>
+			<li>
+				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
+				Tài nguyên trong bài học:
+				<a href="https://cubic-bezier.com">https://cubic-bezier.com</a>
+			</li>
+			<li>
+				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
+			</li>
+		</ul>
+		<h2>
+			<span class="hash-of-heading">#</span> Transitions là gì?
+			<span id="transitions-la-gi" class="target-of-heading-hash"></span>
+		</h2>
+		<p>
+			Hiệu ứng chuyển tiếp (<em>transition</em>) được sử dụng rất phổ biến
+			trong các trang web hiện đại ngày nay. Một trong những trường phổ
+			biến nhất áp dụng <em>transition</em> là thay đổi màu nền của
+			<code>button</code> khi <em>hover</em>.
+		</p>
+		<h3>Cách hoạt động</h3>
+		<p>
+			Trong trường hợp dưới đây màu nền của <code>button</code> sẽ thay
+			đổi đột ngột từ <em>xám</em> sang <em>cam</em> khi ta di chuột vào:
+		</p>
+		<htmlcss-snippet>
+			<div id="wrapper" class="wrapper">
+				<div hidden=""><slot></slot></div>
+				<header class="abc">
+					<h1
+						title="Mình là Sơn Đặng, mình làm cái code snippet này đó hihi ^^">
+						F8 <strong>Code snippet</strong>
+						<span><!--?lit$727281653$-->html</span>
+					</h1>
+					<div class="controls">
+						<!--?lit$727281653$-->
+						<button control-id="ControlID-45">
+							<span class="icon"
+								><!--?lit$727281653$-->
+								<svg
+									viewBox="0 0 14 14"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									width="12"
+									height="12"
+									class="">
+									<path
+										d="M14 7C14 10.875 10.8438 14 7 14C4.8125 14 2.8125 13.0312 1.46875 11.3125C1.28125 11.0938 1.34375 10.7812 1.5625 10.625C1.78125 10.4375 2.09375 10.5 2.25 10.7188C3.40625 12.1875 5.125 13 7 13C10.2812 13 13 10.3125 13 7C13 3.71875 10.2812 1 7 1C4.84375 1 2.875 2.15625 1.8125 4H4.5C4.75 4 5 4.25 5 4.5C5 4.78125 4.75 5 4.5 5H0.5C0.21875 5 0 4.78125 0 4.5V0.5C0 0.25 0.21875 0 0.5 0C0.75 0 1 0.25 1 0.5V3.4375C2.25 1.3125 4.5 0.03125 7 0.03125C10.8438 0.03125 14 3.15625 14 7Z"
+										fill="currentColor"></path>
+								</svg>
+							</span>
+							Reset
+						</button>
+					</div>
+				</header>
+				<main>
+					<div id="editor">
+						<div
+							class="CodeMirror cm-s-dracula CodeMirror-wrap"
+							translate="no"
+							style="clip-path: inset(0px)">
+							<div
+								style="
+									overflow: hidden;
+									position: relative;
+									width: 3px;
+									height: 0px;
+									top: 12px;
+									left: 273px;
+								">
+								<textarea
+									autocorrect="off"
+									autocapitalize="off"
+									spellcheck="false"
+									style="
+										position: absolute;
+										bottom: -1em;
+										padding: 0px;
+										width: 1000px;
+										height: 1em;
+										min-height: 1em;
+										outline: none;
+									"
+									tabindex="0"
+									control-id="ControlID-46"></textarea>
+							</div>
+							<div
+								class="CodeMirror-vscrollbar"
+								tabindex="-1"
+								cm-not-content="true"
+								style="bottom: 0px">
+								<div style="min-width: 1px; height: 0px"></div>
+							</div>
+							<div
+								class="CodeMirror-hscrollbar"
+								tabindex="-1"
+								cm-not-content="true">
+								<div
+									style="
+										height: 100%;
+										min-height: 1px;
+										width: 0px;
+									"></div>
+							</div>
+							<div
+								class="CodeMirror-scrollbar-filler"
+								cm-not-content="true"></div>
+							<div
+								class="CodeMirror-gutter-filler"
+								cm-not-content="true"></div>
+							<div class="CodeMirror-scroll" tabindex="-1">
+								<div
+									class="CodeMirror-sizer"
+									style="
+										margin-left: 29px;
+										margin-bottom: -17px;
+										border-right-width: 33px;
+										min-height: 281px;
+										padding-right: 0px;
+										padding-bottom: 0px;
+									">
+									<div style="position: relative; top: 0px">
+										<div
+											class="CodeMirror-lines"
+											role="presentation">
+											<div
+												role="presentation"
+												style="
+													position: relative;
+													outline: none;
+												">
+												<div class="CodeMirror-measure">
+													<pre
+														class="CodeMirror-line-like">
+x</pre
+													>
+												</div>
+												<div
+													class="CodeMirror-measure"></div>
+												<div
+													style="
+														position: relative;
+														z-index: 1;
+													">
+													<div
+														class="CodeMirror-selected"
+														style="
+															position: absolute;
+															left: 236px;
+															top: 0px;
+															width: 8px;
+															height: 18px;
+														"></div>
+												</div>
+												<div
+													class="CodeMirror-cursors"
+													style=""></div>
+												<div
+													class="CodeMirror-code"
+													role="presentation"
+													style="">
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																1
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag emmet-open-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">"btn"</span><span class="cm-tag cm-bracket">&gt;</span>Click me!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag emmet-close-tag">button</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																2
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">style</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																3
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-qualifier">.btn</span> {</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																4
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">border</span>: <span class="cm-atom">none</span>;</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																5
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">outline</span>: <span class="cm-atom">none</span>;</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																6
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">padding</span>: <span class="cm-number">10px</span> <span class="cm-number">24px</span>;</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																7
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">border-radius</span>: <span class="cm-number">5px</span>;</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																8
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">background-color</span>: <span class="cm-atom">#ccc</span>;</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																9
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																10
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																11
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-qualifier">.btn</span>:<span class="cm-variable-3">hover</span> {</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																12
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">background-color</span>: <span class="cm-keyword">orange</span>;</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																13
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																14
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">style</span><span class="cm-tag cm-bracket">&gt;</span></span></pre>
+													</div>
+													<div
+														style="
+															position: relative;
+														">
+														<div
+															class="CodeMirror-gutter-wrapper"
+															aria-hidden="true"
+															style="left: -29px">
+															<div
+																class="CodeMirror-linenumber CodeMirror-gutter-elt"
+																style="
+																	left: 0px;
+																	width: 21px;
+																">
+																15
+															</div>
+														</div>
+														<pre
+															class="CodeMirror-line"
+															role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									style="
+										position: absolute;
+										height: 33px;
+										width: 1px;
+										border-bottom: 0px solid transparent;
+										top: 281px;
+									"></div>
+								<div
+									class="CodeMirror-gutters"
+									style="height: 314px; left: 0px">
+									<div
+										class="CodeMirror-gutter CodeMirror-linenumbers"
+										style="width: 29px"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--?lit$727281653$-->
+					<div class="browser-wrap">
+						<iframe
+							id="browser"
+							class="browser"
+							srcdoc='<button class="btn">Click me!</button>
+<style>
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 24px;
+    border-radius: 5px;
+    background-color: #ccc;
+  }
+  
+  .btn:hover {
+    background-color: orange;
+  }
+</style>
+'></iframe>
+					</div>
+
+					<button
+						class="toggle-fullscreen light-mode"
+						control-id="ControlID-47">
+						<!--?lit$727281653$-->
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 14 14"
+							fill="none"
+							width="14"
+							height="14"
+							class="">
+							<path
+								d="M4.5 0H0.5C0.21875 0 0 0.25 0 0.5V4.5C0 4.78125 0.21875 5 0.5 5C0.75 5 1 4.78125 1 4.5V1H4.5C4.75 1 5 0.78125 5 0.5C5 0.25 4.75 0 4.5 0ZM4.5 13H1V9.5C1 9.25 0.75 9 0.5 9C0.21875 9 0 9.25 0 9.5V13.5C0 13.7812 0.21875 14 0.5 14H4.5C4.75 14 5 13.7812 5 13.5C5 13.25 4.75 13 4.5 13ZM13.5 9C13.2188 9 13 9.25 13 9.5V13H9.5C9.21875 13 9 13.25 9 13.5C9 13.7812 9.21875 14 9.5 14H13.5C13.75 14 14 13.7812 14 13.5V9.5C14 9.25 13.75 9 13.5 9ZM13.5 0H9.5C9.21875 0 9 0.25 9 0.5C9 0.78125 9.21875 1 9.5 1H13V4.5C13 4.78125 13.2188 5 13.5 5C13.75 5 14 4.78125 14 4.5V0.5C14 0.25 13.75 0 13.5 0Z"
+								fill="#fff"></path>
+						</svg>
+					</button>
+				</main>
+			</div>
+		</htmlcss-snippet>
+	</body>
+</html>

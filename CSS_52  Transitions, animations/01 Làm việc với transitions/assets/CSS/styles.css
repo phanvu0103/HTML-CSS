@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font-family: system-ui, sans-serif;
+}
+
+h1 {
+	color: blue;
+	font-size: 28px;
+	margin: 20px;
+	margin: 0px;
+	padding: 8px 0px;
+	font-size: 1.3rem;
+	text-transform: uppe;
+}
+
+li {
+	color: blueviolet;
+	font-style: italic;
+	font-size: 25px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+}
+
+p {
+	font-size: 28px;
+	color: rgb(14, 11, 218);
+}
+
+.wrapper {
+	transition: padding 0.2s ease 0s;
+}
+.abc {
+	justify-content: space-between;
+}
+.controls {
+	--app-checkbox-label-size: 1.3rem;
+	gap: 8px;
+}
+.icon {
+}
+.CodeMirror {
+}
+.cm-s-dracula {
+}
+.CodeMirror-wrap {
+}
+.CodeMirror-vscrollbar {
+}
+.CodeMirror-hscrollbar {
+}
+.CodeMirror-scrollbar-filler {
+}
+.CodeMirror-gutter-filler {
+}
+.CodeMirror-scroll {
+}
+.CodeMirror-sizer {
+}
+.CodeMirror-lines {
+}
+.CodeMirror-measure {
+}
+.CodeMirror-line-like {
+}
+.CodeMirror-selected {
+}
+.CodeMirror-cursors {
+}
+.CodeMirror-code {
+}
+.CodeMirror-gutter-wrapper {
+}
+.CodeMirror-linenumber {
+}
+.CodeMirror-gutter-elt {
+}
+.CodeMirror-line {
+}
+.cm-tag {
+}
+.cm-bracket {
+}
+.emmet-open-tag {
+}
+.cm-attribute {
+}
+.cm-string {
+}
+.emmet-close-tag {
+}
+.cm-qualifier {
+}
+.cm-property {
+}
+.cm-atom {
+}
+.cm-number {
+}
+.cm-variable-3 {
+}
+.cm-keyword {
+}
+.CodeMirror-gutters {
+}
+.CodeMirror-gutter {
+}
+.CodeMirror-linenumbers {
+}
+.browser-wrap {
+}
+.browser {
+}
+.btn {
+}
+.toggle-fullscreen {
+}
+.light-mode {
+}
