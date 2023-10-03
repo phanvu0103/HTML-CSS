@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title></title>
+		<title>Làm hiệu ứng scale giống shopee</title>
 		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 		<link
 			rel="stylesheet"
@@ -15,61 +15,19 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 	</head>
 	<body>
-		<h1></h1>
-		<ul>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-		</ul>
+		<h1>Làm hiệu ứng scale giống shopee</h1>
+		<header>
+			<div class="header-inner">
+				<!-- Cart btn -->
+				<div class="cart-btn">
+					<i class="fa-solid fa-cart-shopping"></i>
 
-		<main>
-			<h1>Đăng bài</h1>
-
-			<form
-				action="https://api-gateway.fullstack.edu.vn/action_page.php"
-				autocomplete="off">
-				<div class="form-group">
-					<label for="title">Tiêu đề</label>
-					<input
-						type="text"
-						id="title"
-						name="title"
-						placeholder="Nhập tiêu đề..." />
+					<!-- Cart preview -->
+					<div class="cart-preview">
+						<p class="cart-message">Chưa Có Sản Phẩm</p>
+					</div>
 				</div>
-
-				<div class="form-group">
-					<label for="editor" onclick="editor.focus()"
-						>Nội dung</label
-					>
-					<div
-						id="editor"
-						class="editor"
-						contenteditable=""
-						placeholder="Nhập nội dung..."
-						name="content"
-						oninput="content.innerHTML = this.innerHTML"></div>
-					<textarea id="content" name="content" hidden></textarea>
-				</div>
-
-				<div class="form-group">
-					<button class="btn" type="submit">Đăng bài</button>
-				</div>
-			</form>
-		</main>
+			</div>
+		</header>
 	</body>
 </html>

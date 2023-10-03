@@ -19,57 +19,20 @@
 		<ul>
 			<li>
 				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
 			</li>
 			<li>
 				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
 			</li>
 			<li>
 				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
 			</li>
 			<li>
 				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
+				<span class="hash-of-heading">#</span>
 			</li>
 		</ul>
-
-		<main>
-			<h1>Đăng bài</h1>
-
-			<form
-				action="https://api-gateway.fullstack.edu.vn/action_page.php"
-				autocomplete="off">
-				<div class="form-group">
-					<label for="title">Tiêu đề</label>
-					<input
-						type="text"
-						id="title"
-						name="title"
-						placeholder="Nhập tiêu đề..." />
-				</div>
-
-				<div class="form-group">
-					<label for="editor" onclick="editor.focus()"
-						>Nội dung</label
-					>
-					<div
-						id="editor"
-						class="editor"
-						contenteditable=""
-						placeholder="Nhập nội dung..."
-						name="content"
-						oninput="content.innerHTML = this.innerHTML"></div>
-					<textarea id="content" name="content" hidden></textarea>
-				</div>
-
-				<div class="form-group">
-					<button class="btn" type="submit">Đăng bài</button>
-				</div>
-			</form>
-		</main>
 	</body>
 </html>
