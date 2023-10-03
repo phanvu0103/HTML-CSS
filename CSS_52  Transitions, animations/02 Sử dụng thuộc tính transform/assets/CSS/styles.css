@@ -7,6 +7,10 @@
 body {
 	color: #333;
 	font-family: system-ui, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 h1 {
@@ -26,4 +30,13 @@ li {
 p {
 	font-size: 28px;
 	color: rgb(14, 11, 218);
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	background: yellowgreen;
+	transform: rotate(48deg) scale(1.1) skew(1deg) translate(93px, 9px);
+	-webkit-transform: rotate(48deg) scale(1.1) skew(1deg) translate(93px, 9px);
+	-moz-transform: rotate(48deg) scale(1.1) skew(1deg) translate(93px, 9px);
 }

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title></title>
+		<title>Làm nền chéo với rotate, skew</title>
 		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 		<link
 			rel="stylesheet"
@@ -15,61 +15,21 @@
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 	</head>
 	<body>
-		<h1></h1>
-		<ul>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-			<li>
-				<input type="checkbox" />
-			</li>
-		</ul>
+		<h1>Làm nền chéo với rotate, skew</h1>
 
-		<main>
-			<h1>Đăng bài</h1>
+		<div class="box">
+			<span>F8</span>
+		</div>
 
-			<form
-				action="https://api-gateway.fullstack.edu.vn/action_page.php"
-				autocomplete="off">
-				<div class="form-group">
-					<label for="title">Tiêu đề</label>
-					<input
-						type="text"
-						id="title"
-						name="title"
-						placeholder="Nhập tiêu đề..." />
-				</div>
-
-				<div class="form-group">
-					<label for="editor" onclick="editor.focus()"
-						>Nội dung</label
-					>
-					<div
-						id="editor"
-						class="editor"
-						contenteditable=""
-						placeholder="Nhập nội dung..."
-						name="content"
-						oninput="content.innerHTML = this.innerHTML"></div>
-					<textarea id="content" name="content" hidden></textarea>
-				</div>
-
-				<div class="form-group">
-					<button class="btn" type="submit">Đăng bài</button>
-				</div>
-			</form>
-		</main>
+		<div class="section">
+			<div class="hero">
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Omnis vitae dignissimos excepturi, architecto unde porro
+					atque. Aspernatur fuga neque itaque, saepe at quos enim
+					veniam praesentium maiores molestiae, temporibus eos.
+				</p>
+			</div>
+		</div>
 	</body>
 </html>
