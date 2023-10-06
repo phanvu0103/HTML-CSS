@@ -1,12 +1,17 @@
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 
 body {
-	color: #333;
 	font-family: system-ui, sans-serif;
+	padding: 30px;
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	color: black;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	flex-flow: column;
 }
 
 h1 {
@@ -15,15 +20,80 @@ h1 {
 	margin: 20px;
 }
 
-li {
-	color: blueviolet;
-	font-style: italic;
+a {
 	font-size: 25px;
-	margin-left: 10px;
-	margin-bottom: 2px;
+	text-decoration: underline;
 }
 
-p {
-	font-size: 28px;
-	color: rgb(14, 11, 218);
+.text {
+	position: relative;
+	display: inline-block;
+	font-size: 50px;
+	font-weight: 600;
+	transition: color 0.5s;
+}
+
+.text::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* display: flex;
+	justify-content: flex-end; */
+	content: attr(data-text);
+	color: blue;
+	height: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: height 0.5s ease-in-out;
+	/*position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+	content: attr(data-text);
+	color: orange;
+	width: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: width 0.5s ease-in-out;
+	*/
+	-webkit-transition: width 0.5s ease-in-out;
+	-moz-transition: height 0.5s ease-in-out;
+	-ms-transition: height 0.5s ease-in-out;
+	-o-transition: height 0.5s ease-in-out;
+	-webkit-transition: height 0.5s ease-in-out;
+}
+
+.text:hover::before {
+	/* left: 0; */
+	height: 100%;
+	/* justify-content: flex-start; */
+}
+
+.text-1 {
+	position: relative;
+	display: inline-block;
+	font-size: 50px;
+	font-weight: 600;
+	transition: color 0.5s;
+}
+
+.text-1::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+	content: attr(data-text);
+	color: orange;
+	width: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: width 0.5s ease-in-out;
+}
+
+.text-1:hover::before {
+	left: 0;
+	width: 100%;
+	justify-content: flex-start;
 }
