@@ -81,11 +81,14 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link 
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
-		rel="stylesheet">
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+			rel="stylesheet">
 
 		<!-- Styles -->
 		<link rel="stylesheet" href="./assets/css/styles.css" />
+
+		<!-- A -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	</head>
 	<body>
 		<!-- header -->
@@ -144,14 +147,14 @@
 					<div class="container-hero">
 						<!-- hero content -->
 						<section class="hero__content">
-							<h1 class="hero__heading">
+							<h1 class="hero__heading" >
 								Exceptional dental care for all ages.
 							</h1>
 							<p class="hero__desc">
 								Exceptional dental care for all ages. Your great
 								smile begins with a great dentist.
 							</p>
-							<div class="hero__row">
+							<div class="hero__row ">
 								<a href="#!" class="btn">Book Online</a>
 								<span class="hero__phone"
 									>or call (123) 456-7890</span
@@ -161,7 +164,11 @@
 	
 						<!-- hero media -->
 						<div class="hero__media">
-							<figure class="hero__images">
+							<figure class="hero__images" 
+									data-aos="zoom-in-left"
+									data-aos="fade-up"
+									data-aos-offset="200"
+									data-aos-once="false">
 								<img
 									src="./assets/img/hero-01.png"
 									alt=""
@@ -169,7 +176,11 @@
 								<img
 									src="./assets/img/hero-02.png"
 									alt=""
-									class="hero__img" />
+									class="hero__img"
+									data-aos="zoom-in-left"
+									data-aos="fade-up"
+									data-aos-once="false"
+									/>
 							</figure>
 						</div>
 					</div>
@@ -181,7 +192,7 @@
 			<section class="services">
 				<div class="container">
 					<section class="services-section">
-						<h2 class="section-heading">Our services</h2>
+						<h2 class="section-heading animate__animated animate__bounce ">Our services</h2>
 						<p class="section-desc">
 							Exceptional dental care for all ages. Your great
 							smile begins with a great dentist.
@@ -189,7 +200,12 @@
 					</section>
 					<div class="section-row">
 						<figure class="section__images">
-							<img src="./assets/img/services-01.png" alt="" />
+							<img 
+							src="./assets/img/services-01.png" 
+							alt="" 
+							data-aos="zoom-in-left"		
+							data-aos="fade-up"	
+							ata-aos-once="false"/>
 						</figure>
 						<div class="section-list">
 							<!-- section item 1 -->
@@ -282,14 +298,25 @@
 			<section class="work">
 				<div class="container">
 					<!-- Work heading -->
-					<h2 class="section-heading work-heading">How it works</h2>
-					<p class="section-desc work-desc">
+					<h2 class="section-heading work-heading"
+					data-aos="flip-left"
+					data-aos-easing="ease-out-cubic"
+					data-aos-duration="2000">
+						How it work
+					</h2>
+					<p class="section-desc work-desc" 
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="1500">
 						Exceptional dental care for all ages. Your great smile
 						begins with a great dentist.
 					</p>
 
 					<!-- Work List -->
-					<div class="work-row">
+					<div class="work-row" 
+						data-aos="fade-down"
+						data-aos-easing="linear"
+						data-aos-duration="1500">
 						<div class="work-list">
 							<!-- work item 1 -->
 							<section class="work-item">
@@ -846,5 +873,9 @@
 				</div>
 			</div>
 		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>

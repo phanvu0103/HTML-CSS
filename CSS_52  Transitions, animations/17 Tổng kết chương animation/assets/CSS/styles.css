@@ -1,29 +1,48 @@
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 
 body {
-	color: #333;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+
+	margin: 0;
 	font-family: system-ui, sans-serif;
+	color: black;
+	background-color: white;
 }
 
-h1 {
-	color: blue;
-	font-size: 28px;
-	margin: 20px;
+.box {
+	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+	background: olivedrab;
+	animation: run 1s infinite alternate;
 }
 
-li {
-	color: blueviolet;
-	font-style: italic;
-	font-size: 25px;
-	margin-left: 10px;
-	margin-bottom: 2px;
+@media (prefers-reduced-motion: reduce) {
+	.box {
+		animation: colorChange 1s infinite alternate;
+	}
 }
 
-p {
-	font-size: 28px;
-	color: rgb(14, 11, 218);
+@keyframes run {
+	from {
+		translate: 0 -50px;
+	}
+	to {
+		translate: 0 50px;
+	}
+}
+
+@keyframes colorChange {
+	from {
+		background: olivedrab;
+	}
+	to {
+		background: orange;
+	}
 }

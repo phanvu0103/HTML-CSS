@@ -218,6 +218,7 @@ a {
 }
 
 .container-hero {
+	display: flex;
 	width: 1170px;
 	margin-left: 367px;
 }
@@ -860,9 +861,6 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
 	column-gap: 78px;
-}
-
-.footer__column {
 }
 
 .footer__column-1 {

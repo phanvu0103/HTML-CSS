@@ -1,12 +1,5 @@
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
-}
-
-body {
-	color: #333;
-	font-family: system-ui, sans-serif;
 }
 
 h1 {
@@ -23,7 +16,60 @@ li {
 	margin-bottom: 2px;
 }
 
-p {
-	font-size: 28px;
-	color: rgb(14, 11, 218);
+/* Loading... */
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	color: black;
+	background-color: white;
+}
+
+.loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 99;
+	translate: -50% -50%;
+	width: 50px;
+	height: 50px;
+}
+
+.loading.inner {
+	position: absolute;
+}
+
+.loading::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border: 5px solid;
+	border-color: red blue yellow violet;
+	border-radius: 50%;
+	animation: spinner 1s infinite;
+	-webkit-animation: spinner 1s infinite;
+}
+
+.loading[data-text]::after {
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	translate: -50%;
+	content: attr(data-text);
+	white-space: nowrap;
+}
+
+@keyframes spinner {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
+
+.box {
+	position: relative;
+	width: 300px;
+	height: 150px;
+	background: #ccc;
 }

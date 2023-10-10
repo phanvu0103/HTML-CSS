@@ -1,29 +1,53 @@
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
 }
 
+/*
+  Transition
+  Animation
+*/
+
 body {
-	color: #333;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	margin: 0;
 	font-family: system-ui, sans-serif;
+	color: black;
+	background-color: white;
+
+	gap: 100px;
 }
 
-h1 {
-	color: blue;
-	font-size: 28px;
-	margin: 20px;
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 200px;
+	height: 200px;
+	background: orange;
+
+	font-size: 40px;
+	font-weight: 600;
+
+	animation-name: spinner;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	/* animation-delay: 2s; */
+	/* animation-direction: alternate-reverse; */
+	/* animation-fill-mode: forwards; */
 }
 
-li {
-	color: blueviolet;
-	font-style: italic;
-	font-size: 25px;
-	margin-left: 10px;
-	margin-bottom: 2px;
-}
-
-p {
-	font-size: 28px;
-	color: rgb(14, 11, 218);
+@keyframes spinner {
+	0% {
+		rotate: 0;
+	}
+	100% {
+		rotate: 360deg;
+	}
 }
