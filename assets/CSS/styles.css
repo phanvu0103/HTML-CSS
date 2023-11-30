@@ -34,7 +34,11 @@ input {
 	padding: 8px;
 	border: 1px solid #333;
 	break-inside: 4px;
-
 	font-size: 16px;
 	outline: none;
+}
+
+a {
+	text-decoration: none;
+	text-align: unset;
 }
