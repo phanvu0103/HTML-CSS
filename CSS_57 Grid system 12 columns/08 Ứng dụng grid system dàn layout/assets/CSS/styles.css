@@ -8,9 +8,21 @@ body {
 	font-family: system-ui;
 }
 
-.card-item {
-	padding: 10px;
-	border: 1px dashed rgb(147, 7, 240);
-	text-align: center;
+.container {
+	padding: 0;
+}
+
+.inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: 30px;
+
+	background: #ccc;
+
+	font-size: 30px;
 	font-weight: 600;
 }

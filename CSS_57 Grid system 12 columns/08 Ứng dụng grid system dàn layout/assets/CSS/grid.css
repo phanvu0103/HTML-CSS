@@ -1,17 +1,15 @@
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
-.container {
+.container,
+.container-fluid {
 	--column-size: 12;
+	--spacer: 10px;
 
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-.container-fluid {
-	width: 100%;
+	padding-left: calc(var(--spacer) / 2);
+	padding-right: calc(var(--spacer) / 2);
 }
 
 .row {
@@ -29,11 +27,100 @@
 	--spacer: 0;
 }
 
+.row > [class*="offset-"] {
+	margin-left: calc(100% / var(--column-size) * var(--offset-number));
+}
+
+.offset-0 {
+	--offset-number: 0;
+}
+
+.offset-1 {
+	--offset-number: 1;
+}
+
+.offset-2 {
+	--offset-number: 2;
+}
+
+.offset-3 {
+	--offset-number: 3;
+}
+
+.offset-4 {
+	--offset-number: 4;
+}
+
+.offset-5 {
+	--offset-number: 5;
+}
+
+.offset-6 {
+	--offset-number: 6;
+}
+
+.offset-7 {
+	--offset-number: 7;
+}
+
+.offset-8 {
+	--offset-number: 8;
+}
+
+.offset-9 {
+	--offset-number: 9;
+}
+
+.offset-10 {
+	--offset-number: 10;
+}
+
+.offset-11 {
+	--offset-number: 11;
+}
+
+.col,
+.row[class*="row-cols-"] > *,
 .row > [class*="col-"] {
-	flex: 0 0 auto;
-	width: calc(100% / var(--column-size) * var(--column-number));
 	padding-left: calc(var(--spacer) / 2);
 	padding-right: calc(var(--spacer) / 2);
+}
+
+.row[class*="row-cols-"] > *,
+.row > [class*="col-"] {
+	flex: 0 0 auto;
+}
+
+.row[class*="row-cols-"] > * {
+	width: calc(100% / var(--row-cols-number));
+}
+
+.row-cols-1 > * {
+	--row-cols-number: 1;
+}
+
+.row-cols-2 > * {
+	--row-cols-number: 2;
+}
+
+.row-cols-3 > * {
+	--row-cols-number: 3;
+}
+
+.row-cols-4 > * {
+	--row-cols-number: 4;
+}
+
+.row-cols-5 > * {
+	--row-cols-number: 5;
+}
+
+.row-cols-6 > * {
+	--row-cols-number: 6;
+}
+
+.row > [class*="col-"] {
+	width: calc(100% / var(--column-size) * var(--column-number));
 }
 
 .col-1 {
@@ -84,43 +171,64 @@
 	--column-number: 12;
 }
 
-.row[class*="row-cols-"] > * {
-	flex: 0 0 auto;
-	width: calc(100% / var(--row-cols-number));
-	padding-left: calc(var(--spacer) / 2);
-	padding-right: calc(var(--spacer) / 2);
-}
-
-.row-cols-1 > * {
-	--row-cols-number: 1;
-}
-
-.row-cols-2 > * {
-	--row-cols-number: 2;
-}
-
-.row-cols-3 > * {
-	--row-cols-number: 3;
-}
-
-.row-cols-4 > * {
-	--row-cols-number: 4;
-}
-
-.row-cols-5 > * {
-	--row-cols-number: 5;
-}
-
-.row-cols-6 > * {
-	--row-cols-number: 6;
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 	.container {
-		--spacer: 10px;
+		--spacer: 24px;
 
 		max-width: 540px;
+	}
+
+	.g-sm-0 {
+		--spacer: 0;
+	}
+
+	.offset-sm-0 {
+		--offset-number: 0;
+	}
+
+	.offset-sm-1 {
+		--offset-number: 1;
+	}
+
+	.offset-sm-2 {
+		--offset-number: 2;
+	}
+
+	.offset-sm-3 {
+		--offset-number: 3;
+	}
+
+	.offset-sm-4 {
+		--offset-number: 4;
+	}
+
+	.offset-sm-5 {
+		--offset-number: 5;
+	}
+
+	.offset-sm-6 {
+		--offset-number: 6;
+	}
+
+	.offset-sm-7 {
+		--offset-number: 7;
+	}
+
+	.offset-sm-8 {
+		--offset-number: 8;
+	}
+
+	.offset-sm-9 {
+		--offset-number: 9;
+	}
+
+	.offset-sm-10 {
+		--offset-number: 10;
+	}
+
+	.offset-sm-11 {
+		--offset-number: 11;
 	}
 
 	.col-sm-1 {
@@ -200,6 +308,58 @@
 @media (min-width: 768px) {
 	.container {
 		max-width: 720px;
+	}
+
+	.g-md-0 {
+		--spacer: 0;
+	}
+
+	.offset-md-0 {
+		--offset-number: 0;
+	}
+
+	.offset-md-1 {
+		--offset-number: 1;
+	}
+
+	.offset-md-2 {
+		--offset-number: 2;
+	}
+
+	.offset-md-3 {
+		--offset-number: 3;
+	}
+
+	.offset-md-4 {
+		--offset-number: 4;
+	}
+
+	.offset-md-5 {
+		--offset-number: 5;
+	}
+
+	.offset-md-6 {
+		--offset-number: 6;
+	}
+
+	.offset-md-7 {
+		--offset-number: 7;
+	}
+
+	.offset-md-8 {
+		--offset-number: 8;
+	}
+
+	.offset-md-9 {
+		--offset-number: 9;
+	}
+
+	.offset-md-10 {
+		--offset-number: 10;
+	}
+
+	.offset-md-11 {
+		--offset-number: 11;
 	}
 
 	.col-md-1 {
@@ -283,6 +443,58 @@
 		max-width: 960px;
 	}
 
+	.g-lg-0 {
+		--spacer: 0;
+	}
+
+	.offset-lg-0 {
+		--offset-number: 0;
+	}
+
+	.offset-lg-1 {
+		--offset-number: 1;
+	}
+
+	.offset-lg-2 {
+		--offset-number: 2;
+	}
+
+	.offset-lg-3 {
+		--offset-number: 3;
+	}
+
+	.offset-lg-4 {
+		--offset-number: 4;
+	}
+
+	.offset-lg-5 {
+		--offset-number: 5;
+	}
+
+	.offset-lg-6 {
+		--offset-number: 6;
+	}
+
+	.offset-lg-7 {
+		--offset-number: 7;
+	}
+
+	.offset-lg-8 {
+		--offset-number: 8;
+	}
+
+	.offset-lg-9 {
+		--offset-number: 9;
+	}
+
+	.offset-lg-10 {
+		--offset-number: 10;
+	}
+
+	.offset-lg-11 {
+		--offset-number: 11;
+	}
+
 	.col-lg-1 {
 		--column-number: 1;
 	}
@@ -362,6 +574,58 @@
 		max-width: 1170px;
 	}
 
+	.g-xl-0 {
+		--spacer: 0;
+	}
+
+	.offset-xl-0 {
+		--offset-number: 0;
+	}
+
+	.offset-xl-1 {
+		--offset-number: 1;
+	}
+
+	.offset-xl-2 {
+		--offset-number: 2;
+	}
+
+	.offset-xl-3 {
+		--offset-number: 3;
+	}
+
+	.offset-xl-4 {
+		--offset-number: 4;
+	}
+
+	.offset-xl-5 {
+		--offset-number: 5;
+	}
+
+	.offset-xl-6 {
+		--offset-number: 6;
+	}
+
+	.offset-xl-7 {
+		--offset-number: 7;
+	}
+
+	.offset-xl-8 {
+		--offset-number: 8;
+	}
+
+	.offset-xl-9 {
+		--offset-number: 9;
+	}
+
+	.offset-xl-10 {
+		--offset-number: 10;
+	}
+
+	.offset-xl-11 {
+		--offset-number: 11;
+	}
+
 	.col-xl-1 {
 		--column-number: 1;
 	}
@@ -431,85 +695,6 @@
 	}
 
 	.row-cols-xl-6 > * {
-		--row-cols-number: 6;
-	}
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-	.container {
-		max-width: 1320px;
-	}
-
-	.col-xxl-1 {
-		--column-number: 1;
-	}
-
-	.col-xxl-2 {
-		--column-number: 2;
-	}
-
-	.col-xxl-3 {
-		--column-number: 3;
-	}
-
-	.col-xxl-4 {
-		--column-number: 4;
-	}
-
-	.col-xxl-5 {
-		--column-number: 5;
-	}
-
-	.col-xxl-6 {
-		--column-number: 6;
-	}
-
-	.col-xxl-7 {
-		--column-number: 7;
-	}
-
-	.col-xxl-8 {
-		--column-number: 8;
-	}
-
-	.col-xxl-9 {
-		--column-number: 9;
-	}
-
-	.col-xxl-10 {
-		--column-number: 10;
-	}
-
-	.col-xxl-11 {
-		--column-number: 11;
-	}
-
-	.col-xxl-12 {
-		--column-number: 12;
-	}
-
-	.row-cols-xxl-1 > * {
-		--row-cols-number: 1;
-	}
-
-	.row-cols-xxl-2 > * {
-		--row-cols-number: 2;
-	}
-
-	.row-cols-xxl-3 > * {
-		--row-cols-number: 3;
-	}
-
-	.row-cols-xxl-4 > * {
-		--row-cols-number: 4;
-	}
-
-	.row-cols-xxl-5 > * {
-		--row-cols-number: 5;
-	}
-
-	.row-cols-xxl-6 > * {
 		--row-cols-number: 6;
 	}
 }
