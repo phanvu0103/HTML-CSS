@@ -1,7 +1,7 @@
 {
-  "recommendations": [
-    "pkief.material-icon-theme",
-    "evondev.indent-rainbow-palettes",
-    "evondev.generate-css-class"
-  ]
+	"recommendations": [
+		"pkief.material-icon-theme",
+		"evondev.indent-rainbow-palettes",
+		"evondev.generate-css-class"
+	]
 }
