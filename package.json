@@ -1,5 +1,19 @@
 {
   "dependencies": {
     "aos": "^3.0.0-beta.6"
-  }
+  },
+  "name": "f8-shop",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+  
 }
