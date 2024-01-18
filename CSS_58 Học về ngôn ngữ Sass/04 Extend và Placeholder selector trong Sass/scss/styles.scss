@@ -1,0 +1,61 @@
+$primary-color: #3479f8;
+$secondary-color: #6e757c;
+$success-color: #4fa450;
+$danger-color: #cc4648;
+$warning-color: #f6c43d;
+$info-color: #499fb6;
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+.group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 50px;
+}
+
+.btn-base {
+	padding: 12px 20px;
+	border: none;
+	border-radius: 8px;
+
+	color: #fff;
+
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.btn-primary {
+	@extend .btn-base;
+	background: $primary-color;
+}
+
+.btn-secondary {
+	@extend .btn-base;
+	background: $secondary-color;
+}
+
+.btn-success {
+	@extend .btn-base;
+	background: $success-color;
+}
+
+.btn-danger {
+	@extend .btn-base;
+	background: $danger-color;
+}
+
+.btn-warning {
+	@extend .btn-base;
+	color: #333;
+	background: $warning-color;
+}
+
+.btn-info {
+	@extend .btn-base;
+	background: $info-color;
+}

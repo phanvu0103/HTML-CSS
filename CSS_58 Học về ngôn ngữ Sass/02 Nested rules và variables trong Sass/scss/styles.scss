@@ -12,60 +12,61 @@ $primary-color: red;
 }
 
 // VD 1
-// .card {
-//     width: 300px;
-//     padding: 20px;
-//     border: 2px solid #ccc;
-//     border-radius: 8px;
+.card {
+	width: 300px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
 
-//     .thumb {
-//         width: 100%;
-//     }
+	.thumb {
+		width: 100%;
+	}
 
-//     .title {
-//         font-size: 22px;
-//     }
+	.title {
+		font-size: 22px;
+	}
 
-//     strong {
-//         color: red;
-//     }
+	strong {
+		color: red;
+	}
 
-//     .desc {
-//         font-size: 18px;
-//     }
+	.desc {
+		font-size: 18px;
+	}
 
-//     .btn-link {
-//         color: #666;
-//     }
-// }
+	.btn-link {
+		color: #666;
+	}
+}
 
 // VD 2
-// .card {
-//     width: 300px;
-//     padding: 20px;
-//     border: 2px solid #ccc;
-//     border-radius: 8px;
+.card {
+	width: 300px;
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
 
-//     &-thumb {
-//         width: 100%;
-//     }
+	&-thumb {
+		width: 100%;
+	}
 
-//     &-title {
-//         font-size: 22px;
-//     }
+	&-title {
+		font-size: 22px;
+	}
 
-//     strong {
-//         color: red;
-//     }
+	strong {
+		color: red;
+	}
 
-//     &-desc {
-//         font-size: 18px;
-//     }
+	&-desc {
+		font-size: 18px;
+	}
 
-//     &-btn-link {
-//         color: #666;
-//     }
-// }
+	&-btn-link {
+		color: #666;
+	}
+}
 
 // VD 3
 .card {
@@ -110,7 +111,7 @@ $primary-color: red;
 		}
 
 		&::before {
-			content: "1. ";
+			content: "ONE. ";
 		}
 
 		// &:hover {

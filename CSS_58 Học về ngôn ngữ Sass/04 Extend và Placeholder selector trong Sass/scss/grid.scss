@@ -1,11 +1,13 @@
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
+
 .container,
 .container-fluid {
 	--column-size: 12;
 	--spacer: 10px;
 
 	width: 100%;
+	max-width: 1170px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: calc(var(--spacer) / 2);
