@@ -1,16 +1,3 @@
-/* $primary-color: #3479f8;
-$secondary-color: #6e757c;
-$success-color: #4fa450;
-$danger-color: #cc4648;
-$warning-color: #f6c43d;
-$info-color: #499fb6; */
-
-*,
-::before,
-::after {
-	box-sizing: border-box;
-}
-
 * {
 	margin: 0;
 	padding: 0;
