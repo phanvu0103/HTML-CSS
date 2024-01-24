@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cách sử dụng mixins trong Sass</title>
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Reset -->
+	<link rel="stylesheet" href="./assets/css/reset.css" />
+
+	<!-- responsive -->
+	<link rel="stylesheet" href="./assets/css/responsive.css" />
+
+	<!-- grid  -->
+	<link rel="stylesheet" href="./assets/css/grid.css" />
+
+	<!-- Style  -->
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+
+	<!-- I. Mixins:
+	1. Không tham số ✅
+	2. Có tham số ✅
+	- Tham số mặc định ✅
+	- Dùng tham số trước đó làm mặc định ✅
+	- Truyền đối số theo tên ✅
+	3. Mixin lồng mixin ✅
+
+	II. Bài toán: Tạo mixin "grid"
+	- Tạo grid layout có theo hàng và cột
+	- Có tham số "column" và "spacing"
+	- Kết hợp sử dụng biến CSS & biến Sass -->
+
+	<!-- VD 1 -->
+	<div class="center">Center me!</div>
+	<div class="box">Center!</div>
+	<br>
+	<div class="list">
+		<div class="item">Item 1</div>
+		<div class="item">Item 2</div>
+		<div class="item">Item 3</div>
+		<div class="item">Item 4</div>
+		<div class="item">Item 5</div>
+		<div class="item">Item 6</div>
+		<div class="item">Item 7</div>
+		<div class="item">Item 8</div>
+		<div class="item">Item 9</div>
+		<div class="item">Item 10</div>
+		<div class="item">Item 11</div>
+		<div class="item">Item 12</div>
+		<div class="item">Item 13</div>
+		<div class="item">Item 14</div>
+		<div class="item">Item 15</div>
+		<div class="item">Item 16</div>
+	</div>
+	<br>
+	<div class="news-list">
+		<div class="news-item">News item 1</div>
+		<div class="news-item">News item 2</div>
+		<div class="news-item">News item 3</div>
+		<div class="news-item">News item 4</div>
+		<div class="news-item">News item 5</div>
+		<div class="news-item">News item 6</div>
+		<div class="news-item">News item 7</div>
+		<div class="news-item">News item 8</div>
+	</div>
+
+</body>
+
+</html>

@@ -10,6 +10,51 @@
 
 .card {
   width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+.card .thumb {
+  width: 100%;
+}
+.card .title {
+  font-size: 22px;
+}
+.card strong {
+  color: red;
+}
+.card .desc {
+  font-size: 18px;
+}
+.card .btn-link {
+  color: #666;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+.card-thumb {
+  width: 100%;
+}
+.card-title {
+  font-size: 22px;
+}
+.card strong {
+  color: red;
+}
+.card-desc {
+  font-size: 18px;
+}
+.card-btn-link {
+  color: #666;
+}
+
+.card {
+  width: 300px;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 8px;
@@ -41,7 +86,7 @@
   font-size: 32px;
 }
 .card__title::before {
-  content: "1. ";
+  content: "ONE. ";
 }
 .card__desc {
   font-size: 18px;

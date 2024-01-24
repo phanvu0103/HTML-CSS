@@ -1,0 +1,36 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  background: orangered;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px 30px 40px 20px;
+  translate: 100px;
+  margin: 50px 0;
+  background: hotpink;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,46 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px;
+}
+
+.btn-base, .btn-info, .btn-warning, .btn-danger, .btn-success, .btn-secondary, .btn-primary {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #3479f8;
+}
+
+.btn-secondary {
+  background: #6e757c;
+}
+
+.btn-success {
+  background: #4fa450;
+}
+
+.btn-danger {
+  background: #cc4648;
+}
+
+.btn-warning {
+  color: #333;
+  background: #f6c43d;
+}
+
+.btn-info {
+  background: #499fb6;
+}/*# sourceMappingURL=styles.css.map */

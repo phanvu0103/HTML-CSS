@@ -1,0 +1,56 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+@mixin move($x, $y: null) {
+	translate: $x, $y;
+}
+
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin rounded($tl, $tr: $tl, $br: $tl, $bl: $tl) {
+	border-radius: $tl $tr $br $bl;
+	@include move(100px);
+}
+
+.center {
+	@include flexCenter;
+	@include size(200px, 300px);
+
+	background: orangered;
+
+	font: {
+		size: 30px;
+		weight: 600;
+	}
+}
+
+.box {
+	@include flexCenter;
+	@include size(200px, 200px);
+	@include rounded(10px, $tr: 30px, $bl: 20px, $br: 40px);
+
+	margin: 50px 0;
+
+	background: hotpink;
+
+	font: {
+		size: 40px;
+		weight: 600;
+	}
+}
