@@ -8,6 +8,15 @@ body {
   font-family: sans-serif;
 }
 
+.title {
+  margin-bottom: 50px;
+}
+
+p {
+  margin-left: 20px;
+  text-align: center;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -38,7 +47,7 @@ body {
 
 .list {
   --column: 4;
-  --spacing: 15px;
+  --spacing: 30px;
   display: flex;
   flex-wrap: wrap;
   row-gap: var(--spacing);
@@ -48,48 +57,15 @@ body {
   width: calc(100% / var(--column) - var(--spacing));
   margin-left: var(--spacing);
 }
+@media (max-width: 575.98px) {
+  .list {
+    --column: 1;
+    --spacing: 10px;
+  }
+}
 .list .item {
-  text-align: center;
-  background: salmon;
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.news-list {
-  --column: 2;
-  --spacing: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: var(--spacing);
-  margin-left: calc(-1 * var(--spacing));
-}
-.news-list > * {
-  width: calc(100% / var(--column) - var(--spacing));
-  margin-left: var(--spacing);
-}
-.news-list .news-item {
-  text-align: center;
-  background: aquamarine;
-  font-size: 25px;
-  font-weight: 600;
-}
-
-.news--big-list {
-  --column: 3;
-  --spacing: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: var(--spacing);
-  margin-left: calc(-1 * var(--spacing));
-}
-.news--big-list > * {
-  width: calc(100% / var(--column) - var(--spacing));
-  margin-left: var(--spacing);
-}
-.news--big-list .news--big-item {
-  text-align: center;
-  background: rgb(233, 13, 60);
-  font-size: 25px;
+  background: olivedrab;
+  font-size: 20px;
   font-weight: 600;
 }
 

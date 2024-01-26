@@ -8,6 +8,15 @@ body {
 	font-family: sans-serif;
 }
 
+.title {
+	margin-bottom: 50px;
+}
+
+p {
+	margin-left: 20px;
+	text-align: center;
+}
+
 @mixin move($x, $y: null) {
 	translate: $x, $y;
 }
@@ -72,43 +81,40 @@ body {
 	}
 }
 
+@mixin screen($device) {
+	@if $device == tablet {
+		@media (max-width: 991.98px) {
+			@content;
+		}
+	}
+}
+
+@mixin screen($device) {
+	@if $device == mobile {
+		@media (max-width: 575.98px) {
+			@content;
+		}
+	}
+}
+
 .list {
-	@include grid(4, 15px);
+	@include grid(4, 30px);
+
+	@include screen(tablet) {
+		--column: 2;
+		--spacing: 20px;
+	}
+
+	@include screen(mobile) {
+		--column: 1;
+		--spacing: 10px;
+	}
 
 	.item {
-		text-align: center;
-		background: salmon;
+		background: olivedrab;
 
 		font: {
-			weight: 600;
-			size: 30px;
-		}
-	}
-}
-
-.news-list {
-	@include grid(2, 30px);
-
-	.news-item {
-		text-align: center;
-		background: aquamarine;
-
-		font: {
-			size: 25px;
-			weight: 600;
-		}
-	}
-}
-
-.news--big-list {
-	@include grid(3, 40px);
-
-	.news--big-item {
-		text-align: center;
-		background: rgb(233, 13, 60);
-
-		font: {
-			size: 25px;
+			size: 20px;
 			weight: 600;
 		}
 	}
