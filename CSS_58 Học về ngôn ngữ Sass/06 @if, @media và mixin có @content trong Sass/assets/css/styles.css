@@ -17,34 +17,6 @@ p {
   text-align: center;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 300px;
-  translate: 500px;
-  border-radius: 10px 50px 10px 20px;
-  translate: 100px;
-  background: orangered;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px 30px 40px 20px;
-  translate: 100px;
-  margin: 50px 0;
-  background: hotpink;
-  font-size: 40px;
-  font-weight: 600;
-}
-
 .list {
   --column: 4;
   --spacing: 30px;
@@ -52,10 +24,17 @@ p {
   flex-wrap: wrap;
   row-gap: var(--spacing);
   margin-left: calc(-1 * var(--spacing));
+  margin-top: 30px;
 }
 .list > * {
   width: calc(100% / var(--column) - var(--spacing));
   margin-left: var(--spacing);
+}
+@media (max-width: 991.98px) {
+  .list {
+    --column: 2;
+    --spacing: 20px;
+  }
 }
 @media (max-width: 575.98px) {
   .list {
@@ -67,6 +46,20 @@ p {
   background: olivedrab;
   font-size: 20px;
   font-weight: 600;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  background: #ccc;
+}
+.container .item {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: olivedrab;
 }
 
 /*# sourceMappingURL=styles.css.map */

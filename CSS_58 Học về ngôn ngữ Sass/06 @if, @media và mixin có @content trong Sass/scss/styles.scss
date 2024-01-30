@@ -37,35 +37,6 @@ p {
 	@include move(100px);
 }
 
-.center {
-	@include flexCenter;
-	@include size(200px, 300px);
-	@include move(500px);
-	@include rounded(10px, 50px, 10px, 20px);
-
-	background: orangered;
-
-	font: {
-		size: 30px;
-		weight: 600;
-	}
-}
-
-.box {
-	@include flexCenter;
-	@include size(200px, 200px);
-	@include rounded(10px, $tr: 30px, $bl: 20px, $br: 40px);
-
-	margin: 50px 0;
-
-	background: hotpink;
-
-	font: {
-		size: 40px;
-		weight: 600;
-	}
-}
-
 @mixin grid($column, $spacing) {
 	--column: #{$column};
 	--spacing: #{$spacing};
@@ -87,9 +58,7 @@ p {
 			@content;
 		}
 	}
-}
 
-@mixin screen($device) {
 	@if $device == mobile {
 		@media (max-width: 575.98px) {
 			@content;
@@ -99,7 +68,6 @@ p {
 
 .list {
 	@include grid(4, 30px);
-
 	@include screen(tablet) {
 		--column: 2;
 		--spacing: 20px;
@@ -110,6 +78,8 @@ p {
 		--spacing: 10px;
 	}
 
+	margin-top: 30px;
+
 	.item {
 		background: olivedrab;
 
@@ -117,5 +87,44 @@ p {
 			size: 20px;
 			weight: 600;
 		}
+	}
+}
+
+@mixin position($pos) {
+	@if $pos == top-left {
+		top: 0;
+		left: 0;
+	}
+	@if $pos == top-right {
+		top: 0;
+		right: 0;
+	}
+	@if $pos == bottom-left {
+		bottom: 0;
+		left: 0;
+	}
+	@if $pos == bottom-right {
+		bottom: 0;
+		right: 0;
+	}
+	@if $pos == center {
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+	}
+}
+
+.container {
+	position: relative;
+	height: 400px;
+	background: #ccc;
+
+	.item {
+		@include position(bottom-left);
+		// top-left, top-right, bottom-right, bottom-left, center
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		background: olivedrab;
 	}
 }
