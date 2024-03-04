@@ -1,11 +1,5 @@
-// Base
-@import "base/variables";
-@import "base/mixins";
-
-@import "base/reset";
-@import "base/common";
-
-// Components
-@import "components/header";
-@import "components/navigation";
-@import "components/sidebar";
+@use "./base";
+@use "./components";
+@use "./layout";
+@use "./pages";
+@use "./vendors";
