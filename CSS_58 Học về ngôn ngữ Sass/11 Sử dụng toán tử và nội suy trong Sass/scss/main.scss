@@ -1,0 +1,21 @@
+@use "./base";
+@use "./components";
+@use "./layout";
+@use "./pages";
+@use "./vendors";
+
+// 1. Equality (==, !=)
+// 2. Relation (>, <, >=, <=)
+// 3. Numeric (+, -, *, /, %)
+// 4. Logic (not, and, or)
+// 5. Interpolation
+
+$selector: ".container";
+$property: "display";
+$placement: "left";
+
+#{$selector} {
+	#{$property}: flex;
+	margin-#{$placement}: 100px;
+	width: 100px;
+}
