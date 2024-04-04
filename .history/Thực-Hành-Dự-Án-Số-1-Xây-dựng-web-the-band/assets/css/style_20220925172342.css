@@ -1,8 +1,0 @@
-/* Resst CSS */
-/* bước đầu trong CSS gõ dấu * vào thêm các thuộc tính như sau */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  /* loại bỏ tính toán kích thước ta dùng (box-sizing: border-box;)  */
-}

@@ -1,8 +1,0 @@
-figure {
-  transition: 1s;
-}
-input:checked ~ figure {
-  /* opacity: 0; */
-  /* display: none; */
-  visibility: hidden;
-}

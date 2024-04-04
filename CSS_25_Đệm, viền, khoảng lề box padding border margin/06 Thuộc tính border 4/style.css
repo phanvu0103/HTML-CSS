@@ -1,9 +1,0 @@
-* {
-    background-color: #a174ff;
-}
-div {
-    display: inline-block;
-    border: solid #5ebbff;
-    border-width: 100px;
-    border-color: #5ebbff transparent #5ebbff transparent;
-}

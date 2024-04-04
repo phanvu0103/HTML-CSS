@@ -1,5 +1,0 @@
-input:checked ~ figure {
-  /* opacity: 0; */
-  /* display: none; */
-  visibility: hidden;
-}
