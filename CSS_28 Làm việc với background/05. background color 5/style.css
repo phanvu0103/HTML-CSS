@@ -1,0 +1,13 @@
+body {
+    background-color: #5ebbff;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    border: 20px solid #d4d797;
+    outline: 20px solid #ec6c24;
+    outline-offset: 20px;
+    background-color: #a174ff;
+}

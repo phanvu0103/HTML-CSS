@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute selector #3</title>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <h1>Attribute selector #3</h1>
+        <ul>
+            <li>
+                [attribute|=value] [lang|="en"]
+                <input type="checkbox" />
+            </li>
+            <li>
+                <input type="checkbox" />
+            </li>
+            <li>
+                <input type="checkbox" />
+            </li>
+            <li>
+                <input type="checkbox" />
+            </li>
+        </ul>
+        <hr />
+        <!-- a[lang|=en] -->
+        <a href="" lang="en-">Link2</a>
+        <a href="" lang="en-US">Link3</a>
+        <a href="" lang="en-UZ">Link4</a>
+        <a href="" lang="vi">Link5</a>
+        <a href="" lang="vi">Link6</a>
+        <a href="" lang="eng">Link1</a>
+        <a href="" lang="en abc">Link7</a>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+<svg width="102" height="106" viewBox="0 0 102 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<path id="Rectangle 183" d="M0 18C0 8.05887 8.05888 0 18 0H84C93.9411 0 102 8.05888 102 18V88C102 97.9411 93.9411 106 84 106H18C8.05887 106 0 97.9411 0 88V18Z" fill="#FFC147"/>
+<path id="Monitor" d="M51 77V65M51 77H36.6M51 77H65.4M51 65H71C73.2091 65 75 63.2091 75 61V33C75 30.7909 73.2091 29 71 29H31C28.7909 29 27 30.7909 27 33V61C27 63.2091 28.7909 65 31 65H51Z" stroke="white" stroke-width="4" stroke-linecap="round"/>
+</g>
+</svg>

@@ -1,0 +1,3 @@
+input:checked ~ figure {
+  opacity: 0;
+}

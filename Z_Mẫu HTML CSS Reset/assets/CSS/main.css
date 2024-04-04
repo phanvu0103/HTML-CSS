@@ -1,0 +1,28 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+}
+.btn--primary {
+  background: orange;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,13 @@
+<svg width="102" height="106" viewBox="0 0 102 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<path id="Rectangle 184" d="M0 18C0 8.05887 8.05888 0 18 0H84C93.9411 0 102 8.05888 102 18V88C102 97.9411 93.9411 106 84 106H18C8.05887 106 0 97.9411 0 88V18Z" fill="#FF947A"/>
+<g id="Chating-circle">
+<path id="Ellipse 44" d="M51 77C64.2548 77 75 66.2548 75 53C75 39.7452 64.2548 29 51 29C37.7452 29 27 39.7452 27 53C27 57.3447 28.1545 61.4198 30.1734 64.9352C30.4385 65.3968 30.5311 65.9403 30.4086 66.4584L28.2 75.8L35.5364 72.6573C36.1944 72.3755 36.9491 72.4723 37.5414 72.8741C41.3797 75.4784 46.0121 77 51 77Z" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+<g id="Group 20">
+<circle id="Ellipse 45" cx="39" cy="53" r="3" fill="white"/>
+<circle id="Ellipse 46" cx="51" cy="53" r="3" fill="white"/>
+<circle id="Ellipse 47" cx="63" cy="53" r="3" fill="white"/>
+</g>
+</g>
+</g>
+</svg>

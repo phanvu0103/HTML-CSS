@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Combinator selectors</title>
+  </head>
+  <body>
+    <h1>Combinator selectors</h1>
+    <ul>
+      <li>
+        Space (tác động thẻ con nằm trong thẻ cha )
+        <input type="checkbox" />
+      </li>
+      <li>
+        > (tác động con của thẻ)
+        <input type="checkbox" />
+      </li>
+      <li>
+        + (tác động thẻ sau ko phải con của thẻ )
+        <input type="checkbox" />
+      </li>
+      <li>
+        ~ (tác động các thẻ sau ko phải con của thẻ )
+        <input type="checkbox" />
+      </li>
+    </ul>
+    <!-- Combinator selectors #2 
+Cập nhật tháng 10 năm 2022
+
+Thêm CSS để các thẻ <a> tại danh sách cấp 1 có chữ màu red.
+
+Danh sách cấp 1 gồm các mục:
+
+Frontend
+Backend
+DevOps -->
+    <ul class="menu">
+      <li>
+        <a href="#!">Frontend</a>
+        <ul>
+          <li><a href="#!">HTML, CSS</a></li>
+          <li><a href="#!">JavaScript</a></li>
+          <li><a href="#!">ReactJS</a></li>
+        </ul>
+      </li>
+      <li><a href="#!">Backend</a></li>
+      <li><a href="#!">DevOps</a></li>
+    </ul>
+  </body>
+</html>

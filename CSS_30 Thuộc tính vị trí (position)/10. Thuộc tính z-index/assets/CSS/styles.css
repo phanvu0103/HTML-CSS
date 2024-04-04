@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+li {
+    color: blueviolet;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.box {
+    font-size: 40px;
+    /* margin: 10px 0px; */
+}
+
+.container {
+    height: 200px;
+    background: #333;
+}
+.box {
+    background: #666;
+}
+.box-1 {
+    background: orange;
+}
+
+.box-2 {
+    background: green;
+}

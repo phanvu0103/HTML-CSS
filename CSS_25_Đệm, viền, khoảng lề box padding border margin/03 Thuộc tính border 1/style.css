@@ -1,0 +1,18 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 120%;
+}
+.box {
+    /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+    border: 20px solid green;
+    font-size: 32px;
+    background-color: aquamarine;
+    /* độ rộng hay độ dày của border 
+  cộng với padding và content để tạo ra tổng thể của 1 phần tử sẽ ko có thuộc tính nào tham gia tăng kích kích phần tử đó */
+    border-radius: 50px;
+    text-align: center;
+    display: flexbox;
+    margin: auto;
+}

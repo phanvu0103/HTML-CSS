@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dùng BEM</title>
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="./assets/css/reset.css" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+	</head>
+	<body>
+		<h1>Dùng BEM</h1>
+		<!--
+    Syntax:
+    - Block: block
+    - Element: block__element
+    - Modifier:
+        - Block: block--modifier
+        - Element: block__element--modifier
+-->
+
+		<!-- Success -->
+		<div class="toast toast--success">
+			<div class="toast__icon toast__icon--success">
+				<i class="fa-solid fa-circle-check"></i>
+			</div>
+			<p class="toast__message">Lorem ipsum dolor sit amet.</p>
+		</div>
+
+		<!-- Error -->
+		<div class="toast toast--error">
+			<div class="toast__icon toast__icon--error">
+				<i class="fa-solid fa-circle-exclamation"></i>
+			</div>
+			<p class="toast__message">
+				Lorem ipsum dolor sit amet consectetur.
+			</p>
+		</div>
+		<br />
+		<a href="/CSS_45 BEM là gì/index.html"> BEM</a>
+	</body>
+</html>

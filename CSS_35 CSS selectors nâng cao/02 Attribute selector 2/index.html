@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Attribute selector #2</title>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <h1>Attribute selector #2</h1>
+        <ul>
+            <li>
+                [attribute=value] [target="_blank"]
+                <input type="checkbox" />
+            </li>
+            <li>
+                [attribute~=value] [title~="flower"]
+                <input type="checkbox" />
+            </li>
+            <li>
+                <input type="checkbox" />
+            </li>
+            <li>
+                <input type="checkbox" />
+            </li>
+        </ul>
+        <hr />
+        <a href="" lang="vi">link1</a>
+        <a href="" lang="en">link2</a>
+        <a href="" lang="en">link3</a>
+        <hr />
+        <a href="" title="Lorem ipsum">link1</a>
+        <a href="" title="ipsum dolor sit">link2</a>
+        <a href="" title="dolor sit amet">link3</a>
+    </body>
+</html>

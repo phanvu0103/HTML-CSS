@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 30px;
+    height: 310px;
+    border: 3px dotted #ccc;
+    background-image: url(https://images.unsplash.com/photo-1674561613195-ffaafee879cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position: bottom right;
+    /* % là theo tỉ lệ khug hình
+        px thì tỉ lệ khoản cách khung hình tuyetj đối ko thay đổi
+    */
+}

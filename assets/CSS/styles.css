@@ -1,0 +1,27 @@
+body {
+	/* position: relative; */
+}
+
+.image {
+	position: relative;
+}
+
+.image-img {
+	position: absolute;
+}
+
+.title {
+	position: absolute;
+	font-size: 100px;
+	margin-left: 50%;
+}
+
+.list {
+	margin-top: 45px;
+	position: absolute;
+}
+
+a {
+	text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */

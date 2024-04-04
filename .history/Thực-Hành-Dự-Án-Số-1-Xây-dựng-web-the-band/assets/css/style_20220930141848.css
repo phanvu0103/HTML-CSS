@@ -1,0 +1,275 @@
+/* Resst CSS */
+/* bước đầu trong CSS gõ dấu * vào thêm các thuộc tính như sau */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* loại bỏ tính toán kích thước ta dùng (box-sizing: border-box;)  */
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  /* thêm font-family để trang đồng font chữ
+  của html. 
+  Nếu thêm font-family trên dấu sao
+  thf toàn trang đều có font đó 
+  thì ko đúng theo yêu cầu. */
+}
+/* 
+1. Làm từ ngoài vào trong
+2. Làm Từ trên xuống dưới
+3. Làm từ tổng quan đến chi tiết
+        header
+        slider
+
+ */
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng 
+(kiểu chữ, hình tròn, vuông, ....)
+*/
+#main {
+  /* nằm trong body chứa cả website */
+}
+
+#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  /* kích thước chiều rộng bằng main 
+ độ dài mình đi đo hay 
+ (cty, khách hàng yêu cầu)
+  trên w3schools The BAND. */
+  height: 46px;
+  /* header có chiều cao 46px */
+  background-color: #000;
+  /* màu header màu đen background-color */
+}
+#nav {
+  display: inline-block;
+  /* P.3.06
+  thêm display: inline-block;
+   */
+}
+#nav,
+.subnav {
+  /* #nav là cha của:
+  #nav li
+  #nav .subnav
+  #nav li a
+  P.2 thêm .subnav và đoạn code
+    list-style-type: none; để thẻ con của MORE mất
+    dấu chấm (.)
+  */
+  list-style-type: none;
+  /*  P.2.08 list-style-type: none;
+là kiểu của danh sách mặt định là đấu chấm nên thêm
+None đẻ mất dấu chấm */
+}
+
+#nav li {
+  /* display: inline-block; P.2.07
+  chuyển display: inline-block xuống
+  #nav > li để làm thẻ con
+  more có màu chiều ngang bằng thẻ cha*/
+  position: relative;
+  /* P.2.02
+  position: relative;
+
+   */
+}
+#nav > li {
+  display: inline-block;
+  /* P.2.07 sữa thẻ con More  */
+}
+#nav > li > a {
+  /*P2.03
+  #nav > li > a
+   Dấu > lấy thuộc tính vào thẻ con trực tiếp
+   thẻ a con trực tiếp của thẻ li và thẻ li con
+    trực tiếp của thẻ nav và tchỉ tác động đến
+    thẻ a cấp 1 ( Home. band....) ko tác động đến
+    thẻ a cấp 2 (Merchandise, Extras,...) 
+   ko liên qua đến thẻ a 
+   chuyển color: #fff; của #nav li a lên 
+   #nav > li > a để hiện thanh chữ thẻ a cấp 2
+  */
+  color: #fff;
+  text-transform: uppercase;
+  /* P.2.09 text-transform: uppercase; ta thay đổi
+  chữ thường thành chữ hoa cho thẻ header */
+}
+
+#nav li:hover .subnav {
+  display: block;
+  /* P.2.13.1 ta thêm vào thuộc tính #nav li:hover .subnav
+để click chuột thẻ con More hiện và ẩn
+li:hover là con của nav,
+.subnav là con của li, để hover cho thẻ 
+sau đó mở lại display: none; -> #nav .subnav */
+}
+#nav li a {
+  /* color: #fff; */
+  text-decoration: none;
+  line-height: 46px;
+  /* line-height: 46px canh cho 
+  chữ ở giữa thanh header */
+  padding: 0 24px;
+  /* pading phải xem kiểm tra trang 
+  rồi bấm vào computed thấy pading 24
+  khoảng cách 2 dòng chữ cách xa nhau. */
+  display: block;
+  /* p2.07.1 ta sữa display: inline-block;
+  thành   display: block; 
+  */
+  /* P.1:thay đổi chiều cao của thẻ a
+  mở phần kiểm tra trang bấm vào thẻ li,
+   bấm style > :hover them vào display: inline-block;
+   xem chiều caovwaf ý ko. 
+   vì thẻ a có  */
+}
+#nav > li:hover > a,
+#nav .subnav li:hover {
+  color: #000;
+  background-color: #ccc;
+  /* P.2.06 */
+}
+
+#nav li:hover a {
+  /* P.2.06
+  color: #000;
+  background-color: #ccc;
+  bỏ thuộc tính này thêm thuộc tính :#nav > li:hover > a
+  và cho #nav > li:hover > a lên
+  #nav .subnav li:hover
+   */
+}
+#nav .subnav {
+  /* display: none; ẩn để css cho P.2.02 đến P.2.13.2 
+  ta cho hiện lại */
+  display: none;
+  min-width: 160px;
+  /* P.2.14 thêm min-width: 160px;
+  cho thẻ con More chiều ngang dài ra 1 chút theo
+  tiêu chuẩn (của khách hàng)  */
+  top: 100%;
+  left: 0;
+  /* P.2.15 thêm 2 thuộc tính
+  top: 100%;
+  left: 0; cho chính xác và chuẩn
+  tại ko phải web nào cũng đẹp như vậy  */
+  position: absolute;
+  background-color: #fff;
+  /*  P.2.02 NAVI....
+   position: absolute; cho các chữ thẻ a cấp 1 
+   hiện trên thẻ header để thẻ a cấp 2 ko đẩy 
+   thẻ cấp 1 xuống.
+  background-color: #fff;
+   */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /*P.2.12. làm bóng đỗ cho thẻ con More
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+/* #nav > li:hover > a {
+  P2.05 ta tạo #nav > li:hover > a
+  ta chuyển lên và gọp với #nav .subnav li:hover
+   bằng đấu phẩy (,) cho khỏi trùng
+  cho chuyên nghiệp người viết code
+  ta CSS nhưng màu chiều ngang thẻ con của MORE chưa 
+ đủ kích thước ta css display: block; trên #nav li a 
+} */
+#nav .subnav li:hover {
+  /* color: #000;
+  background-color: #ccc; */
+  /* P2.05
+  ta chuyển lên và gọp với #nav > li:hover > a
+   bằng đấu phẩy (,) cho khỏi trùng
+  cho chuyên nghiệp người viết code
+  ta CSS nhưng màu chiều ngang thẻ con của MORE chưa 
+ đủ kích thước ta css display: block; trên #nav li a  */
+}
+
+#nav .subnav a {
+  color: #000;
+  /* P.2.04 #nav .subnav a
+  nên để 3 cấp nhiều quá sau này khó sữa code 
+  cho chữ màu đen trên thẻ con của More code: color... */
+  padding: 0 12px;
+  /* P.2.10 thêm padding: 0 12px;
+  cho chữ thẻ con More sang bên trái 1 tí ko thẳng
+  thẻ cha More.  */
+  line-height: 38px;
+  /* P.2.11.2 */
+}
+#nav .nav-arrow-down {
+  font-size: 14px;
+  /* P.3.02 CSS cho P.3.01 phần HTML
+  chỉnh font-size: cho nhỏ lại
+  qua html thêm thẻ div */
+}
+#header .search-btn {
+  /* P.3.04
+ tạo thẻ
+ #header .search-btn 
+      */
+  float: right;
+  /* P.3.07 thêm 
+  float: right; cho icon search sang phải
+  */
+  padding: 0 21px;
+  /* P.3.09 thêm
+  padding: 0 21px;
+  cho icon ra giữa
+   */
+}
+#header .search-btn:hover {
+  background-color: #f44336 !important;
+  /* P.3.10 thêm thẻ
+#header .search-btn:hover 
+để hover ẩn hiện màu nền trong icon search
+css: background-color: #f44336
+   */
+  cursor: pointer;
+  /* P.3.11 
+   cursor là thay đổi hình chuột
+   còn pointer là hình bàn tay
+   css ở đúng ngữ nghĩa có hover khi mình
+   trỏ chuột vào là đổi hình hiện bàn tay hơn 
+#header .search-btn 
+
+   */
+}
+#header .search-icon {
+  /* P.3.05 
+  tạo thẻ 
+#header .search-icon 
+css màu và font ch thẻ
+thêm thẻ #nav (trên đầu) riêng lúc nãy gọp chung vs .subnav  
+   */
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+  /* P.3.08 thêm
+  line-height: 46px;
+  cho icon ở giữa header
+   */
+}
+#slider {
+  /* p.2.01 thêm màu min-height: 500px;
+  background-color: #333; ch dễ nhìn thẻ header */
+  /* min-height: 500px;
+  background-color: #333; */
+  /* xong P.2.11.1 ta ẩn hay bỏ  min-height: 500px;
+  background-color: #333; để làm bóng đỗ cho 
+  thẻ con More */
+}
+
+#content {
+  background-color: #f44336;
+  height: 2000px;
+}
+
+#footer {
+}

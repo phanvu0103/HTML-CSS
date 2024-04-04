@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Demo form</title>
+		<!-- Font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./assets/CSS/styles.css" />
+		<link rel="stylesheet" href="./assets/CSS/reset.css" />
+	</head>
+	<body>
+		<main>
+			<div class="heading">
+				<h1>Contact Us</h1>
+				<p>Any question or remarks? Just write us a message!</p>
+			</div>
+
+			<div class="container">
+				<!-- Contact info -->
+				<section class="contact-info">
+					<h2>Contact Information</h2>
+					<p class="desc">
+						Fill up the form and our Team will get back to you
+						within 24 hours.
+					</p>
+
+					<div class="info_item">
+						<div class="info-item">
+							<span class="icon">
+								<i class="fa-solid fa-phone"></i>
+							</span>
+							<span class="value">+84123456789</span>
+						</div>
+						<div class="info-item">
+							<span class="icon">
+								<i class="fa-solid fa-envelope"></i>
+							</span>
+							<span class="value">abc@gmail.com</span>
+						</div>
+						<div class="info-item">
+							<span class="icon">
+								<i class="fa-solid fa-location-dot"></i>
+							</span>
+							<span class="value">123 Nguyen Chi Thanh</span>
+						</div>
+					</div>
+
+					<div class="socials">
+						<a href="#!" class="item">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+						<a href="#!" class="item">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+						<a href="#!" class="item">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+						<a href="#!" class="item">
+							<i class="fa-brands fa-linkedin-in"></i>
+						</a>
+					</div>
+
+					<div class="circle"></div>
+					<div class="circle large"></div>
+				</section>
+
+				<!-- Contact form -->
+				<div class="contact-form">
+					<form
+						action="https://api-gateway.fullstack.edu.vn/action_page.php"
+						autocomplete="off">
+						<!-- row 1 First Name-->
+						<div class="form-row">
+							<div class="form-group">
+								<label for="first-name" class="form-label"
+									>First Name
+								</label>
+
+								<input
+									type="text"
+									id="first-name"
+									name="first-name"
+									class="form-input"
+									placeholder="Enter first name"
+									required
+									minlength="2" />
+
+								<p class="form-error">
+									Vui Lòng Nhập Trường hợp này
+								</p>
+							</div>
+
+							<div class="form-group">
+								<label for="Last-name" class="form-label"
+									>Last Name
+								</label>
+
+								<input
+									type="text"
+									id="first-name"
+									name="first-name"
+									class="form-input"
+									placeholder="Enter Last name"
+									required
+									minlength="2" />
+
+								<p class="form-error">
+									Vui Lòng Nhập Trường hợp này
+								</p>
+							</div>
+						</div>
+
+						<!-- row 2 Mail  Phone-->
+						<div class="form-row">
+							<div class="form-group">
+								<label for="email" class="form-label"
+									>Mail
+								</label>
+
+								<input
+									type="email"
+									id="email"
+									name="email"
+									class="form-input"
+									placeholder="hello@gmail.com"
+									value="hello@gmail.com"
+									required
+									pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+
+								<p class="form-error">
+									Vui Lòng Nhập Trường hợp này
+								</p>
+							</div>
+							<div class="form-group">
+								<label for="Phone" class="form-label"
+									>Phone
+								</label>
+
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									class="form-input"
+									placeholder="Enter Phone"
+									required
+									pattern="^(0|\+?84)(3|5|7|8|9)[0-9]{8}$" />
+
+								<p class="form-error">
+									Vui Lòng Nhập Trường hợp này
+								</p>
+							</div>
+						</div>
+
+						<!-- row 3  Radio-->
+						<div class="form-row">
+							<div class="form-group">
+								<label for="" class="form-label large">
+									What the of website do you need?
+								</label>
+
+								<div class="radio-group">
+									<!-- radio-group 1  -->
+									<div class="radio-btn">
+										<input
+											type="radio"
+											name="type"
+											id="web-design"
+											required />
+										<label for="web-design">
+											Web Design
+										</label>
+									</div>
+
+									<!-- radio-group 2 -->
+									<div class="radio-btn">
+										<input
+											type="radio"
+											name="type"
+											id="web-development"
+											required />
+										<label for="web-development">
+											Web Development
+										</label>
+									</div>
+
+									<!-- radio-group 3 -->
+									<div class="radio-btn">
+										<input
+											type="radio"
+											name="type"
+											id="logo-design"
+											required />
+										<label for="logo-design">
+											Logo Design
+										</label>
+									</div>
+
+									<!-- radio-group 4 -->
+									<div class="radio-btn">
+										<input
+											type="radio"
+											name="type"
+											id="other"
+											required />
+										<label for="other"> Other </label>
+									</div>
+								</div>
+
+								<p class="form-error">
+									Vui Lòng Chọn Trường Này
+								</p>
+							</div>
+						</div>
+
+						<!-- row 4  Messager-->
+						<div class="form-row">
+							<div class="form-group">
+								<label for="message" class="form-label">
+									Message
+								</label>
+								<textarea
+									name="message"
+									id="message"
+									class="form-textarea"
+									required
+									minlength="10"
+									placeholder="What your message...">
+								</textarea>
+							</div>
+						</div>
+
+						<!-- row 5  Send Messager-->
+						<div class="form-row submit-box">
+							<button class="submit-btn" type="submit">
+								Send Messager
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<script>
+			function onResize(e) {
+				e.style.height = "auto";
+				e.style.height = e.scrollHeight + "px";
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    padding-left: 32px;
+    font-family: montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+tbody tr:nth-child(odd) {
+    color: rgb(192, 51, 192);
+    background-color: rgb(238, 238, 174);
+}
+tbody tr:nth-child(even) {
+    color: rgb(90, 9, 90);
+    background-color: rgb(204, 193, 243);
+}
+.w3-responsive {
+    font-size: 18px;
+}
+table .ws-table-all:nth-child(odd) {
+    background-color: aquamarine;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid system 12 columns Dự Án 5</title>
+    <link rel="stylesheet" href="./assets/CSS/reset.css" />
+    <link rel="stylesheet" href="./assets/CSS/grid.css" />
+    <link rel="stylesheet" href="./assets/CSS/styles.css" />
+</head>
+
+<!--
+      Đây là ví dụ sử dụng Grid system để layout cho thiết kế sau:
+      👉 https://www.figma.com/file/PaTpamufO1Nth5YCn6Ekzw/05.-Mobile-Banking-Website-(Medium)
+    -->
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="inner">Header</div>
+        </header>
+
+        <!-- Section 1 -->
+        <section>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="inner">Hero left</div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6 col-12">
+                    <div class="inner">Hero right</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section>
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="inner">Left</div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 col-12">
+                    <div class="inner">Right</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section>
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="inner">Left</div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 col-md-6 col-12">
+                    <div class="inner">Right</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="inner">Left</div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 col-md-6 col-12">
+                    <div class="inner">Right</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section>
+            <div class="row">
+                <div class="col">
+                    <div class="inner">Center</div>
+                </div>
+            </div>
+
+            <div class="row row-cols-md-2 row-cols-1">
+                <div class="col">
+                    <div class="inner">Item 1</div>
+                </div>
+                <div class="col">
+                    <div class="inner">Item 2</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6 -->
+        <section>
+            <div class="row">
+                <div class="col">
+                    <div class="inner">
+                        <div>Left</div>
+                        <div>Right</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-cols-md-2 row-cols-1">
+                <div class="col">
+                    <div class="inner">Item 1</div>
+                </div>
+                <div class="col">
+                    <div class="inner">Item 2</div>
+                </div>
+                <div class="col">
+                    <div class="inner">Item 3</div>
+                </div>
+                <div class="col">
+                    <div class="inner">Item 4</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7 -->
+        <section>
+            <div class="row">
+                <div class="col">
+                    <div class="inner">Download the Apps</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End .container -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="inner">Footer</div>
+        </div>
+    </footer>
+</body>
+
+</html>

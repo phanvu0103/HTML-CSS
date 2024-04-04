@@ -1,0 +1,10 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 120%;
+    line-height: 2;
+    font-weight: 600;
+}
+div p:nth-of-type(odd) {
+    background-color: yellow;
+    display: inline-block;
+}

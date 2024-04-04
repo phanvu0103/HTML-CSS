@@ -1,0 +1,41 @@
+* {
+	/* margin: 0;
+    padding: 0; */
+	box-sizing: border-box;
+}
+
+h1 {
+	color: blue;
+	font-size: 35px;
+	margin: 20px;
+	text-align: center;
+}
+
+li {
+	color: blueviolet;
+	font-style: italic;
+	font-size: 25px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+}
+
+body {
+	font-family: system-ui;
+}
+
+table {
+	margin: 50px;
+	border-collapse: collapse;
+}
+
+table,
+table td,
+table th {
+	border: 1px solid #666;
+}
+
+table td,
+table,
+table th {
+	padding: 4px 8px;
+}

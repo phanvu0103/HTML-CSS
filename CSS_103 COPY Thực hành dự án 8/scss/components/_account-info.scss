@@ -1,0 +1,33 @@
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--account-info-bg);
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        width: 54px;
+        height: 54px;
+        border-radius: 8px;
+
+        background: var(--account-info-icon-bg);
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 146.667%;
+    }
+
+    &__desc {
+        margin-top: 6px;
+        font-size: 1.4rem;
+        line-height: 142.857%;
+    }
+}

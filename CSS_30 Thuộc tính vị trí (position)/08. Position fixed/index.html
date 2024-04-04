@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Position fixed</title>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <h1>Position fixed</h1>
+        <ul>
+            <li>
+                Static (default)
+                <input type="checkbox" />
+            </li>
+            <li>
+                Relative
+                <input type="checkbox" />
+            </li>
+            <li>
+                Absolute
+                <input type="checkbox" />
+            </li>
+            <li>
+                Fixed
+                <input type="checkbox" />
+            </li>
+            <li>
+                Sticky
+                <input type="checkbox" />
+            </li>
+        </ul>
+        <!-- 
+            1. Flow lauout (bố cục luồng | luồng bình thường)
+            2. Positioned (được định vị)
+                - Top
+                - Right
+                - Bottom
+                - left
+            - Static: 1    
+            - relative -> 1, 2 -> định vị theo vị trí ban đầu của nó khi dùng thuộc tính top left... thay đổi vị trí.
+            -absolute -> 2
+                1. Không có thẻcha được định vị:
+                => định vị theo vị trí của thẻ body
+                2. Có thẻcha được định vị:
+                => định vị theo vị trí của thẻ cha gần nhất (được định vị)
+        - Fixed : 2 định vị theo viewport-->
+        <br />
+        <div class="box">box Position fixed</div>
+        <br />
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">Products</a></li>
+            <li><a href="#!">Manufacturers</a></li>
+        </ul>
+
+        <!-- Content -->
+        <div class="content">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                earum aspernatur quos mollitia quaerat cumque eos excepturi
+                voluptas! Commodi iusto sint cum nihil odit vero qui quod
+                suscipit hic quam!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, neque. Impedit dolorum doloremque pariatur laboriosam
+                quidem inventore ipsum natus libero cumque, beatae ratione,
+                consequatur, perferendis expedita dicta similique in tempore.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                natus optio aut consequatur architecto ullam aperiam suscipit
+                excepturi earum asperiores atque temporibus, praesentium a iure
+                esse alias voluptas veritatis ipsam!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Libero, nisi? Impedit ad nam suscipit corporis libero, eveniet
+                laudantium ea ducimus in dolore rem distinctio nisi doloremque
+                quibusdam, quis est? Explicabo.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                earum aspernatur quos mollitia quaerat cumque eos excepturi
+                voluptas! Commodi iusto sint cum nihil odit vero qui quod
+                suscipit hic quam!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, neque. Impedit dolorum doloremque pariatur laboriosam
+                quidem inventore ipsum natus libero cumque, beatae ratione,
+                consequatur, perferendis expedita dicta similique in tempore.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                natus optio aut consequatur architecto ullam aperiam suscipit
+                excepturi earum asperiores atque temporibus, praesentium a iure
+                esse alias voluptas veritatis ipsam!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Libero, nisi? Impedit ad nam suscipit corporis libero, eveniet
+                laudantium ea ducimus in dolore rem distinctio nisi doloremque
+                quibusdam, quis est? Explicabo.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                earum aspernatur quos mollitia quaerat cumque eos excepturi
+                voluptas! Commodi iusto sint cum nihil odit vero qui quod
+                suscipit hic quam!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Facilis, neque. Impedit dolorum doloremque pariatur laboriosam
+                quidem inventore ipsum natus libero cumque, beatae ratione,
+                consequatur, perferendis expedita dicta similique in tempore.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                natus optio aut consequatur architecto ullam aperiam suscipit
+                excepturi earum asperiores atque temporibus, praesentium a iure
+                esse alias voluptas veritatis ipsam!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Libero, nisi? Impedit ad nam suscipit corporis libero, eveniet
+                laudantium ea ducimus in dolore rem distinctio nisi doloremque
+                quibusdam, quis est? Explicabo.
+            </p>
+        </div>
+    </body>
+</html>

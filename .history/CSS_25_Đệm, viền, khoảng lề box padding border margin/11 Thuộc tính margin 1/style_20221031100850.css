@@ -1,0 +1,18 @@
+/* reset.css */
+*{
+    margin: 0;padding: 0;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+/* cách viết chung 4 hướng */
+    margin: 50px;
+/*cách viết 4 hướng */
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-right: 70px;
+    margin-left: 40px;
+/* cách viết gộp 4 hướng */
+    margin: 50px 60px 7-px 40px;
+}

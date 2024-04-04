@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+div * {
+    color: red;
+}
+div :not(p) {
+    color: blue;
+}
+ul li:nth-child(odd) {
+    color: aqua;
+}
+ul li:nth-child(even) {
+    color: blueviolet;
+}

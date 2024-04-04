@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font-family: system-ui, sans-serif;
+}
+
+body,
+textarea,
+input,
+button,
+select {
+	font-family: system-ui, sans-serif;
+}
+
+textarea,
+input,
+button,
+select {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+main {
+	padding: 30px;
+}
+
+h1 {
+	color: blue;
+	font-size: 28px;
+	margin: 20px;
+}
+
+li {
+	color: blueviolet;
+	font-style: italic;
+	font-size: 25px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+}
+
+p {
+	font-size: 28px;
+	color: rgb(14, 11, 218);
+}
+
+form {
+	margin-top: 20px;
+}
+
+main {
+	width: 460px;
+	margin-left: 132px;
+	margin-top: 50px;
+	border: 1px solid #333;
+	border-radius: 5%;
+}
+
+.form-group {
+	margin-top: 16px;
+}
+
+.form-group label,
+.form-group input {
+	display: block;
+}
+
+.form-group label {
+	font-weight: 600;
+}
+
+.form-group .editor,
+.form-group input {
+	width: 240px;
+	height: 34px;
+	margin-top: 8px;
+	padding: 4px 8px;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	outline: none;
+}
+
+.form-group .editor {
+	width: 360px;
+	height: auto;
+	min-height: 80px;
+}
+
+.form-group .editor:empty::before {
+	content: attr(placeholder);
+	color: #888;
+}
+
+.form-group .btn {
+	margin-top: 20px;
+	padding: 10px 28px;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	color: #fff;
+	background: #f05123;
+	cursor: pointer;
+}
+
+.form-group .btn:hover {
+	opacity: 0.9;
+}

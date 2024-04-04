@@ -1,0 +1,39 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+}
+
+.content {
+    width: 700px;
+    padding: 24px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.content h2 {
+    padding-left: 16px;
+    margin-top: 32px;
+    border-left: 4px solid orange;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content p {
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.content figcaption {
+    margin-top: 16px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}

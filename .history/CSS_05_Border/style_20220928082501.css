@@ -1,0 +1,39 @@
+<style>
+.box{
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1 {
+    background-color: red;
+    border: 10px solid rgb(240, 216, 7) ;
+}
+.box2 {
+    background-color: blue;
+    padding: 10px;
+    border-top-width:10px ;
+    border-right-width:12px ;
+    border-bottom-width:14px ;
+    border-left-width:16px ;
+    border-style:solid ;
+    border-color: rgb(157, 56, 177);
+
+}
+.box3 {
+    background-color: violet;
+    padding: 10px;
+    border-width:10px ;
+    border-style:solid ;
+    border-color: greenyellow;
+}
+.box4 {
+    background-color: rgb(22, 77, 228);
+    padding: 10px;
+    border:  solid sandybrown ;
+/*
+border thì giá trị 2px
+*/
+</style>

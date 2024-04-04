@@ -1,0 +1,57 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 120%;
+}
+.box {
+    /* display: inline-block; */
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 20px solid green;
+    font-size: 32px;
+    /* độ rộng hay độ dày của border 
+    cộng với padding và content để tạo ra tổng thể của 1 phần tử sẽ ko có thuộc tính nào tham gia tăng kích kích phần tử đó */
+    border-radius: 0px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    border-width: 20px;
+    border-style: solid;
+    border-color: red blue yellow violet;
+}
+/* làm hình tam giác */
+.box1 {
+    display: inline-block;
+    background-color: brown;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent blue transparent transparent;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 111, 27);
+    border: 20px solid rgb(112, 112, 3);
+    border-right-width: 40px;
+    border-top: 20px solid rgb(5, 90, 129);
+    border-left-width: 20px;
+    border-left-style: solid;
+    border-left-color: blue;
+}
+h3 {
+    color: blue;
+}
+
+p {
+    color: rgb(235, 38, 81);
+}
+
+div.w3-example {
+    margin: 20px;
+    width: 800px;
+    background-color: rgb(233, 241, 241);
+    display: inline-block;
+    text-align: center;
+}

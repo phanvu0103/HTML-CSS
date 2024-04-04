@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	color: black;
+	background-color: white;
+}
+
+.box {
+	margin-top: 50px;
+	width: 200px;
+	height: 200px;
+	background: olivedrab;
+	animation: run 1s infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.box {
+		animation: colorChange 1s infinite alternate;
+	}
+}
+
+@keyframes run {
+	from {
+		translate: 0 -50px;
+	}
+	to {
+		translate: 0 50px;
+	}
+}
+
+@keyframes colorChange {
+	from {
+		background: olivedrab;
+	}
+	to {
+		background: orange;
+	}
+}

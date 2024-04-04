@@ -1,0 +1,15 @@
+h2 {
+    color: green;
+    /* thẻ strong thừa kế thẻ h2 nên có chữ màu xanh lá cây */
+}
+strong {
+    color: blue;
+    /* strong đc ghi đè nên có màu xanh dương */
+}
+body {
+    padding: 20px;
+    font-family: monospace;
+    color: violet;
+    font-size: 120%;
+    line-height: 1.6;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Align-items</title>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <h1>Align-items</h1>
+        <ul>
+            <li>
+                align-items
+                <input type="checkbox" />
+                <ul class="menu">
+                    <li class="sub-menu">
+                        flex-start: Các hạng mục sẽ được sắp xếp phía trên của
+                        hộp chứa.
+                    </li>
+                    <li class="sub-menu">
+                        flex-end: Các hạng mục sẽ được sắp xếp phía dưới cùng
+                        của hộp chứa.
+                    </li>
+                    <li class="sub-menu">
+                        center: Các hạng mục sẽ được sắp xếp ở giữa chính của
+                        hộp chứa.
+                    </li>
+                    <li class="sub-menu">
+                        baseline: Các hạng mục sẽ được hiển thị ở đường cơ bản
+                        của hộp chứa
+                    </li>
+                    <li class="sub-menu">
+                        stretch( Mặc định): Các hạng mục sẽ được kéo dài để phù
+                        hợp với hộp chứa.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr />
+        <div class="container">
+            <div class="item">stretch</div>
+            <div class="item">
+                stretch stretch stretch stretch stretch stretch stretch stretch
+                stretch stretch stretch stretch
+            </div>
+            <div class="item">stretch</div>
+        </div>
+        <div class="container-1">
+            <div class="item-1">flex-start</div>
+            <div class="item-1">
+                flex-start flex-start flex-start flex-start flex-start
+                flex-start flex-start flex-start flex-start flex-start
+            </div>
+            <div class="item-1">flex-start</div>
+        </div>
+        <div class="container-2">
+            <div class="item-2">flex-end</div>
+            -1-2
+            <div class="item-2">
+                flex-end flex-end flex-end flex-end flex-end flex-end flex-end
+                flex-end flex-end flex-end flex-end flex-end
+            </div>
+            <div class="item-2">flex-end</div>
+        </div>
+        <div class="container-3">
+            <div class="item-3">center</div>
+            <div class="item-3">
+                center center center center center center center center center
+                center center center center center center center center center
+                center center
+            </div>
+            <div class="item-3">center</div>
+        </div>
+        -3
+        <div class="container-4">
+            <div class="item-4">baseline</div>
+            <div class="item-4">
+                baseline baseline baseline baseline baseline baseline baseline
+                baseline baseline baseline baseline baseline baseline baseline
+                baseline baseline
+            </div>
+            <div class="item-4">baseline</div>
+        </div>
+    </body>
+</html>

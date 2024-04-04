@@ -1,0 +1,22 @@
+body {
+    padding-left: 32px;
+    font-size: 120%;
+    line-height: 1.6;
+    font-family: Montserrat;
+  }
+h1 {
+    color: green;
+    display: inline-block;
+}
+h1:hover{
+    color: red;
+}
+.title {
+    color: aqua;
+}
+.title:hover{
+    color: red;
+}
+.box .title:hover{
+    color: yellow;
+}

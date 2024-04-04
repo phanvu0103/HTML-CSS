@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #333;
+	font-family: system-ui, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+h1 {
+	color: blue;
+	font-size: 28px;
+	margin: 20px;
+}
+
+li {
+	color: blueviolet;
+	font-style: italic;
+	font-size: 25px;
+	margin-left: 10px;
+	margin-bottom: 2px;
+}
+
+p {
+	font-size: 28px;
+	color: rgb(14, 11, 218);
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	background: yellowgreen;
+	transform: rotate(48deg) scale(1.1) skew(1deg) translate(93px, 9px);
+	-webkit-transform: rotate(48deg) scale(1.1) skew(1deg) translate(93px, 9px);
+	-moz-transform: rotate(48deg) scale(1.1) skew(1deg) translate(93px, 9px);
+}

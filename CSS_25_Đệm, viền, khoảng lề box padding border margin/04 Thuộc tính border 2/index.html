@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./reset.css" />
+        <!-- GG fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Styles -->
+        <link rel="stylesheet" href="style.css" />
+        <title>Border</title>
+    </head>
+    <body>
+        <h1>Border</h1>
+        <ul>
+            <li>
+                Vị trí trong Box Moder
+                <input type="checkbox" />
+            </li>
+            <li>
+                Tính chất
+                <input type="checkbox" />
+            </li>
+            <li>
+                Cú Pháp
+                <input type="checkbox" />
+            </li>
+            <li>
+                Trường hợp sử dụng
+                <input type="checkbox" />
+            </li>
+        </ul>
+
+        <div class="box">box</div>
+        /
+
+        <br />
+        <div class="box1"></div>
+
+        <div class="box2"></div>
+
+        <h2>CSS Border Style</h2>
+        <p>The following values are allowed:</p>
+        <ul>
+            <li>
+                <code class="w3-codespan">dotted</code> - Defines a dotted
+                border
+            </li>
+            <li>
+                <code class="w3-codespan">dashed</code> - Defines a dashed
+                border
+            </li>
+            <li>
+                <code class="w3-codespan">solid</code> - Defines a solid border
+            </li>
+            <li>
+                <code class="w3-codespan">double</code> - Defines a double
+                border
+            </li>
+            <li>
+                <code class="w3-codespan">groove</code> - Defines a 3D grooved
+                border. The effect depends on the border-color value
+            </li>
+            <li>
+                <code class="w3-codespan">ridge</code> - Defines a 3D ridged
+                border. The effect depends on the border-color value
+            </li>
+            <li>
+                <code class="w3-codespan">inset</code> - Defines a 3D inset
+                border. The effect depends on the border-color value
+            </li>
+            <li>
+                <code class="w3-codespan">outset</code> - Defines a 3D outset
+                border. The effect depends on the border-color value
+            </li>
+            <li><code class="w3-codespan">none</code> - Defines no border</li>
+            <li>
+                <code class="w3-codespan">hidden</code> - Defines a hidden
+                border
+            </li>
+        </ul>
+        <p>
+            The <code class="w3-codespan">border-style</code> property can have
+            from one to four values (for the top border, right border, bottom
+            border, and the left border).
+        </p>
+        <div class="w3-example">
+            <h3>Example</h3>
+            <p>Demonstration of the different border styles:</p>
+            <div class="w3-code notranslate cssHigh">
+                <span class="cssselectorcolor" style="color: brown">
+                    p.dotted
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            dotted<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.dashed
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            dashed<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.solid
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            solid<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.double
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            double<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.groove
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            groove<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.ridge
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            ridge<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.inset
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            inset<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.outset
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            outset<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.none
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            none<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />p.hidden
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            hidden<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    ><br />
+                    p.mix
+                    <span class="cssdelimitercolor" style="color: black">{</span
+                    ><span class="csspropertycolor" style="color: red"
+                        >border-style<span
+                            class="csspropertyvaluecolor"
+                            style="color: mediumblue"
+                            ><span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >:</span
+                            >
+                            dotted dashed solid double<span
+                                class="cssdelimitercolor"
+                                style="color: black"
+                                >;</span
+                            ></span
+                        ></span
+                    ><span class="cssdelimitercolor" style="color: black"
+                        >}</span
+                    >
+                </span>
+            </div>
+            <p>Result:</p>
+            <div class="w3-white w3-padding notranslate">
+                <p style="border-style: dotted; padding: 2px 4px">
+                    A dotted border.
+                </p>
+                <p style="border-style: dashed; padding: 2px 4px">
+                    A dashed border.
+                </p>
+                <p style="border-style: solid; padding: 2px 4px">
+                    A solid border.
+                </p>
+                <p style="border-style: double; padding: 2px 4px">
+                    A double border.
+                </p>
+                <p style="border-style: groove; padding: 2px 4px">
+                    A groove border. The effect depends on the border-color
+                    value.
+                </p>
+                <p style="border-style: ridge; padding: 2px 4px">
+                    A ridge border. The effect depends on the border-color
+                    value.
+                </p>
+                <p style="border-style: inset; padding: 2px 4px">
+                    An inset border. The effect depends on the border-color
+                    value.
+                </p>
+                <p style="border-style: outset; padding: 2px 4px">
+                    An outset border. The effect depends on the border-color
+                    value.
+                </p>
+                <p style="border-style: none; padding: 2px 4px">No border.</p>
+                <p style="border-style: hidden; padding: 2px 4px">
+                    A hidden border.
+                </p>
+                <p
+                    style="
+                        border-style: dotted dashed solid double;
+                        padding: 2px 4px;
+                    "
+                >
+                    A mixed border.
+                </p>
+            </div>
+            <a
+                target="_blank"
+                href="tryit.asp?filename=trycss_border-style"
+                class="w3-btn w3-margin-top w3-margin-bottom"
+                >Try it Yourself »</a
+            >
+        </div>
+    </body>
+</html>

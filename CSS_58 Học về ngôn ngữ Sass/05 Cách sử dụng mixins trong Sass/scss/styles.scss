@@ -1,0 +1,115 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+@mixin move($x, $y: null) {
+	translate: $x, $y;
+}
+
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin rounded($tl, $tr: $tl, $br: $tl, $bl: $tl) {
+	border-radius: $tl $tr $br $bl;
+	@include move(100px);
+}
+
+.center {
+	@include flexCenter;
+	@include size(200px, 300px);
+	@include move(500px);
+	@include rounded(10px, 50px, 10px, 20px);
+
+	background: orangered;
+
+	font: {
+		size: 30px;
+		weight: 600;
+	}
+}
+
+.box {
+	@include flexCenter;
+	@include size(200px, 200px);
+	@include rounded(10px, $tr: 30px, $bl: 20px, $br: 40px);
+
+	margin: 50px 0;
+
+	background: hotpink;
+
+	font: {
+		size: 40px;
+		weight: 600;
+	}
+}
+
+@mixin grid($column, $spacing) {
+	--column: #{$column};
+	--spacing: #{$spacing};
+
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: var(--spacing);
+	margin-left: calc(-1 * var(--spacing));
+
+	> * {
+		width: calc(100% / var(--column) - var(--spacing));
+		margin-left: var(--spacing);
+	}
+}
+
+.list {
+	@include grid(4, 15px);
+
+	.item {
+		text-align: center;
+		background: salmon;
+
+		font: {
+			weight: 600;
+			size: 30px;
+		}
+	}
+}
+
+.news-list {
+	@include grid(2, 30px);
+
+	.news-item {
+		text-align: center;
+		background: aquamarine;
+
+		font: {
+			size: 25px;
+			weight: 600;
+		}
+	}
+}
+
+.news--big-list {
+	@include grid(3, 40px);
+
+	.news--big-item {
+		text-align: center;
+		background: rgb(233, 13, 60);
+
+		font: {
+			size: 25px;
+			weight: 600;
+		}
+	}
+}

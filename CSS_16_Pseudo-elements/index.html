@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VŨ Hên Khải</title>
+        <meta charset="utf-8" />
+        <style>
+            html body {
+                margin: 0;
+            }
+            .box {
+                width: 100%;
+                height: 120px;
+                background: rgb(190, 124, 157);
+            }
+            .box::before {
+                content: "xin chào";
+                color: black;
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: aqua;
+            }
+            .box::after {
+                content: "Khóa Học";
+                color: yellow;
+                display: block;
+                width: 70px;
+                height: 30px;
+                background-color: rgb(228, 10, 10);
+            }
+
+            h1::first-letter {
+                font-size: 50px;
+                color: violet;
+            }
+            h1::first-line {
+                font-size: 30px;
+                color: red;
+            }
+            h1::selection {
+                background-color: aqua;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div>i love</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>you</div>
+        </div>
+        <h1>
+            CSS Pseudo Elements : Phần tử giả <br />
+            Dòng thứ 2
+        </h1>
+        <ul>
+            <li>
+                :before là phía trước VD: taọ hộp box nhỏ màu xanh trên hộp box
+                lớn chỉ tạo đc 1 before nó chỉ tồn tại là 1 ko có 2 trên box
+                thôi
+            </li>
+            <li>
+                :after là phía sau VD: taọ hộp box nhỏ màu đỏ trên hộp box lớn
+                chỉ tạo đc 1 after nó chỉ tồn tại là 1 ko có 2 trên box thôi
+            </li>
+            <li>
+                :first-letter ký tự đầu tiên to hay nhỏ trên H1 CSS chữ C to lên
+            </li>
+            <li>
+                :first-line dòng đầu tiên trên h1 thay đổi cỡ chữ màu sắc mình
+                tạo
+            </li>
+            <li>
+                :selection bôi đen trên dòng chữ h1 CSS nó sẽ hiện màu sắc hay
+                background-color mình muốn
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+body {
+  padding-left: 32px;
+  font-size: 120%;
+  line-height: 2;
+  font-family: Montserrat;
+}
+h2 {
+  font-size: 30px;
+  color: aliceblue;
+  background-color: blue;
+  display: inline-block;
+}
+p:first-child {
+  color: red;
+}
+ul li a {
+  text-decoration: none;
+}
+p:last-child {
+  color: blue;
+}
+ul li:first-child a {
+  color: red;
+}
+.box p:nth-child(5) {
+  color: violet;
+}
+.box1 p:nth-last-child(3) {
+  color: rgb(192, 7, 248);
+}
+
+.menu li:last-child a {
+  color: green;
+  font-style: italic;
+  /* bài 2 */
+}
+.item > li:nth-child(odd) > a {
+  color: red;
+  font-weight: 600;
+  /* bài3 */
+}
+ul > .bai4 > li:nth-child(even) > a {
+  color: greenyellow;
+}

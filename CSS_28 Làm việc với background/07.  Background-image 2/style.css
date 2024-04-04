@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    margin: 100px;
+    height: 200px;
+    width: 200px;
+    /* background-color: orange; */
+    background-image: linear-gradient(red, green, blue);
+    /*
+    Syntax: 
+    background-image: linear-gradient
+            * direction( phương hướng chuyên màu, ) (potinal (ko bắt buột) - top bottom)
+            * color1 (required) stop 1 (bắt buột)
+            * color2 (required) stop 2 (bắt buột)
+            .... bắt buột 2 màu trở lên
+            /* background-image: linear-gradient(
+    direction (optional - to bottom),
+    color1 (required) stop1 (optional),
+    color2 (required) stop2 (optional),
+    ...
+); */
+}
+.box-1 {
+    color: beige;
+    margin: 100px;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    background-image: linear-gradient(to top right, red, blue);
+}
+.box-2 {
+    color: beige;
+    margin: 0px;
+    height: 200px;
+    width: 100%;
+    background-color: #8ec5fc;
+    background-image: linear-gradient(94deg, #8ec5fc 0%, #e0c3fc 100%);
+}

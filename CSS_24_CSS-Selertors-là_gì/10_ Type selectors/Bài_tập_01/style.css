@@ -1,0 +1,9 @@
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 120%;
+    line-height: 2;
+}
+.container.box p:first-of-type {
+    background-color: yellow;
+    display: inline-block;
+}

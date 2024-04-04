@@ -1,0 +1,58 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 300px;
+  translate: 500px;
+  border-radius: 10px 50px 10px 20px;
+  translate: 100px;
+  background: orangered;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px 30px 40px 20px;
+  translate: 100px;
+  margin: 50px 0;
+  background: hotpink;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.list {
+  --column: 4;
+  --spacing: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--spacing);
+  margin-left: calc(-1 * var(--spacing));
+}
+.list > * {
+  width: calc(100% / var(--column) - var(--spacing));
+  margin-left: var(--spacing);
+}
+.list .item {
+  text-align: center;
+  background: salmon;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

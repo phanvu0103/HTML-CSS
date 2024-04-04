@@ -1,0 +1,14 @@
+html,
+body {
+    margin: 0%;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    color: red;
+    background-color: aquamarine;
+    padding: 5px;
+    border: 12px solid #333;
+    box-sizing: border-box;
+    text-align: center;
+}

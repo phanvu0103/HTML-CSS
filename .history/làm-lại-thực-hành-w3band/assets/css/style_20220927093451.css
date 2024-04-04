@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main {
+}
+#header {
+  background-color: #000;
+  height: 46px;
+}
+#nav {
+}
+#nav li {
+  display: inline-block;
+}
+#nav li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 46px;
+  display: inline-block;
+  padding: 0 24px;
+}
+#nav li:hover a {
+  color: #ccc;
+}
+#nav .subnav {
+  display: none;
+}
+
+#slider {
+}
+#content {
+}
+#pooter {
+}

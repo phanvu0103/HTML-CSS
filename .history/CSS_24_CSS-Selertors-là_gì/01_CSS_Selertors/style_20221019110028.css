@@ -1,0 +1,10 @@
+body {
+  padding-left: 32px;
+  font-size: 120%;
+  line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  color: red;
+  /* CSS Selertors cho html */
+}

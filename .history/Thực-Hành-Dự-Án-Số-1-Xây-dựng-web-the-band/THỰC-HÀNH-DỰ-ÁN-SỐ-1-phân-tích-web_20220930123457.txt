@@ -1,0 +1,137 @@
+THỰC HÀNH
+  HTML CSS TỪ ZERO ĐẾN HERO TỪ NỘI DUNG SỐ 8 BÀI 78 -> 97
+  NỘI DUNG SỐ 8 XÂY DỰNG w3schools THE BAND
+          78. Giới thiệu dự án
+          79. Phân biệt & gọi tên các thành phần
+          80. Phân tích dự án
+          81. Tạo project base
+          82. Header CSS
+          83. Navigation CSS
+          84. Header search CSS
+          85. Header fixed CSS
+          86. Slider CSS
+          87. About section CSS
+          88. Team section CSS
+          89. Tour tickets CSS
+          90. Tour places CSS
+          91. Buy tickets modal
+          92. Buy tickets modal Javascript logic
+          93. Row - columns layout
+          94. Contact form CSS
+          95. Map, footer CSS
+          96. Review
+          97. Feedback: Độ dài 1 video bao nhiêu là phù hợp?
+
+ HTML CSS TỪ ZERO ĐẾN HERO TỪ NỘI DUNG SỐ 8 BÀI 98 -> 108
+ NỘI DUNG SỐ 9 RESPONSIVE WEB THE BAND
+          98. Responsive là gì?
+          99. Media queries?
+          100. Tablet responsive
+          101. Mobile menu responsive
+          102. Mobile menu fix bug
+          103. Mobile submenu fix bug
+          104. Content responsive
+          105. Contact form responsive
+          106. Review, fix UX
+          107. Run and fix bug on mobile
+          108. Fix bugs 
+
+Thực hành số 1
+
+Phân biệt & gọi tên các thành phần
+
+https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+      1. Phân tích. 
+      2. Dựng base ( cây móng).
+      3. Xây dựng từng phần theo phân tích.
+      4. Hoàn thiện.
+      
+      
+
+.Những thành phần thường gặp trên giao diện website:
+      1. Header (Đầu trang)
+      2. Navigation (Điều Hướng)
+      3. Breadcrumb 
+      4. Sidebar
+      5. Slider
+      6. Banner
+      7. Content (Nội Dung Chính)
+      8. Footer (chân trang)
+
+
+    1. Header (Đầu trang): 
+      Khối đen trên web chứ home band tour .....
+      Phần Thanh Header (đầu trang)
+      Hay trang web Fullstack Thanh Header là màu trắng có chứ thanh điều Hướng Đăng Nhập
+
+    2. Navigation: (Thanh Điều Hướng) 
+      Có thể nằm trong hay ngoài thanh Đầu Trang
+      và 1 nơi có vài núp bầm vài cái link ban bấm vào núp đó 
+      sẽ chuyển về trang chính web hay trang phụ
+      Ví Dụ: trang web Fullstack cũ : thanh Điều Hướng Trang Chủ, Khóa Học, Lớp Học, Tạo CV Xin Việc nằm trên thanh điều hướng 
+      có thể nằm ngoài thanh điều hướng cũng được. 
+      Trang web nào cũng có.
+
+    3. Breadcrumb: 
+    Như thanh hướng cho mình biết trang nằm ở đâu trong trang web, 
+    như 1 map web vậy :(Khóa Học > HTML,CSS trong Fullstack)
+    chỉ dẫn chúng ta biết trang HTML,CSS là con của trang Khóa Học.
+    Gọi là Breadcrumb.
+
+    4.Sidebar: 
+    Side: là phía
+    Bar: là thanh
+    Sidebar được đặt 1 phía màn hình, có thể đặt bên trái hoặc bên phải.
+    Như trang web: https://fullstack.edu.vn/courses
+    thanh Sidebar là thanh Home, Lộ trình, Học, Blog, Hỏi đáp là thanh Sidebar.
+
+    5. Slider:
+    hình ảnh chạy qua, hay video 
+
+    6. Banner: 
+    gọi là hình ảnh 
+    như trang web dantri banner xuất hiện hình ảnh quảng cáo bên phải.
+
+    7. Content (Nội Dung Chính)
+    trong trang Fullstack có nhiều khóa học gọi à Content chứ nội dung của trang
+
+    8. Footer (chân trang)
+              https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+
+                            ONE PAGE
+                    (Trang website này nghĩa là 1 trang, trang này giới thiệu ban nhạc )
+                              (HOME, BAND, TOUR, CONTACT )        
+
+      1. Phân tích. 
+          1 Header (Đầu trang)
+          2 Slider
+          3 Content
+            - About
+            - Tour
+            - CONTACT
+            - Image
+            _ Footer
+          4 Footer
+      2. Dựng base ( cây móng).
+      3. Xây dựng từng phần theo phân tích.
+      4. Hoàn thiện.
+
+ * Phần 1 ta xây dựng Header
+ 1. Làm từ ngoài vào trong
+2. Làm Từ trên xuống dưới
+3. Làm từ tổng quan đến chi tiết
+*Header*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng 
+(kiểu chữ, hình tròn, vuông, ....)
+tạo phần background nền màu đen.
+tạo div cho home band tour Contact more vafphaanf con của more 
+chỉnh sữa màu chữ cho Header
+
+ * Phần 2 Navigation CSS
+ Chỉnh sữa phần MORE 
+ * Phần 3 Header search CSS
+ chỉnh mũi tên Thẻ MORE cho ICON xuống
+ và chỉnh ICON SEARCH sang bên phải

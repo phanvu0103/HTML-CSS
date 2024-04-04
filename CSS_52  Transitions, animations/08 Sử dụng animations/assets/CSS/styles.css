@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+}
+
+/*
+  Transition
+  Animation
+*/
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	color: black;
+	background-color: white;
+
+	gap: 100px;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 200px;
+	height: 200px;
+	background: orange;
+
+	font-size: 40px;
+	font-weight: 600;
+
+	animation-name: spinner;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	/* animation-delay: 2s; */
+	/* animation-direction: alternate-reverse; */
+	/* animation-fill-mode: forwards; */
+}
+
+@keyframes spinner {
+	0% {
+		rotate: 0;
+	}
+	100% {
+		rotate: 360deg;
+	}
+}

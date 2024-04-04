@@ -1,0 +1,125 @@
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+element.style {
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+li {
+    color: blueviolet;
+    font-style: italic;
+    font-size: 45px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.w3-responsive {
+    display: block;
+    overflow-x: auto;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table.ws-table-all {
+    margin: 20px 0;
+}
+
+.ws-table-all td,
+.ws-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+}
+
+.ws-table-all {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+}
+
+.ws-table-all tr:nth-child(even) {
+    background-color: #e7e9eb;
+}
+
+.ws-table-all tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.notranslate {
+    font-weight: 600;
+}
+
+a[href] {
+    color: red;
+    font-size: 23px;
+}

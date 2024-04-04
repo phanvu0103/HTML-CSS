@@ -1,0 +1,27 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blue;
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(211, 10, 230);
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+li {
+    color: blueviolet;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}

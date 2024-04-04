@@ -1,0 +1,18 @@
+.code-example {
+    color: black;
+    background-color: #e7e712;
+    border: 1px solid transparent;
+    margin: 1rem 0 2rem;
+    padding: 1rem 2.5rem 1rem 1rem;
+}
+
+.notranslate {
+}
+.token {
+    color: red;
+    font-weight: 600;
+}
+
+.token.punctuation {
+    color: #ecca08;
+}
